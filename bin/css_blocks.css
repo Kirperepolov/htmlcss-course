@@ -12,11 +12,11 @@
 	padding: 10px 15px 13px;
 	display: inline-block;
 	margin-right: 20px;
-	margin-top: 20px;
 }
 
 .red {
 	background-color: #ffaaaa;
+		margin-top: 20px;
 }
 .blue {
 	background-color: #aaaaff;
@@ -27,11 +27,13 @@
 .black {
 	background-color: #000;
 	color: #fff;
+		margin-top: 20px;
 }
 .none {
 	padding: 0px;
 	margin: 0px;
 	background-color: #fff;
+	width: auto;
 }
 div div:nth-child(even){
 	margin-right: 0;
@@ -45,10 +47,11 @@ div div:nth-child(even){
 	vertical-align: baseline;
 }
 .img img{
-	max-width: 225px;
+	max-width: 300px;
 }
 .img {
-	display: inline;
+	float:left;
+	margin: 1%;
 }
 
 .c1, .c2, .c3, .c4 {
@@ -81,15 +84,16 @@ div div:nth-child(even){
 	width: auto;
 	/*clear: left; устанавливает элемент за "последним" элементом слева
 	clear: right; устанавливает элемент за "последним" элементом справа*/
-	background-color: #aac3aa;
+
 }
-.ee:before {
+.ee:before, .ee:after {
 	display: block;
 	width: 100%;
-	height: 30px;
 	content: "some text"; /*текст, который вставляется в элемент из css*/
 	background-color: #bbbbbb;
-	font-size: 0; /*устана*/
+	font-size: 0; /*устанавливает размер шрифта содерживого в 0,
+									чтоб элемента не было видно*/
+	clear: both;
 }
 .wrap {
 		float: none;
