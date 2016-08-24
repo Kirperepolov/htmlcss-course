@@ -58,17 +58,21 @@
 .pink {
 	font-size: 0.6em;
 	color: #ffc0cb;
-	float: right;
+	font-style: none;
 	margin-right: 5%;
+	vertical-align: middle;
+	display: inline-block;
 }
 
 .und {
 	text-decoration: underline;
-	float: left;
-	margin-left: 12%;
-}
-.kind .pink {
 	float: none;
+	margin: 0;
+	text-align: justify;
+		display: inline-block;
+}
+.ugly .pink {
+	font-style: italic;
 }
 .kind {
 	border: 2px dotted #ff0000;
@@ -78,7 +82,7 @@
 	padding: 5%;
 }
 .ugly {
-	border: 2px dotted #ff8800;
+	border: 2px dotted #ffdd00;
 	margin: 10% 13% 13% 13%;
 	width: auto;
 	padding: 5%;
@@ -86,5 +90,8 @@
 
 .big {
 	color: #000;
-	font-size: 2rem;
+	font-size: 2.2rem;
+}
+.white {
+	color: #fff;
 }

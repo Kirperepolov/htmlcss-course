@@ -31,6 +31,7 @@
 			</ul>
 		</nav>
 
+
 		<a name="top"></a>
 		<div class="paragraph">	
 			<h1> The main header of H1 level</h1>
@@ -109,30 +110,36 @@
 			</div>
 			<table rules="all" border="1">
 				<tr>
-					<td colspan="3">Position</td>
+					<td colspan="4">Position</td>
 				</tr>
 				<tr>
 					<td>static</td>
 					<td>классическое позиционирование элементов</td>
 					<td></td>
+					<td>не работает z-index</td>
 				</tr>
 				<tr>
 					<td>relative</td>
-					<td>Положение элемента устанавливается относительно его исходного места</td>
-					<td></td>
+					<td>Положение элемента устанавливается относительно его исходного места в родительском элементе.</td>
+					<td>можно кусок текста вырвать из строки и сдвинуть, но в строке останется его место</td>
+					<td>z-index</td>
 				</tr>
 				<tr>
 					<td>absolute</td>
-					<td>абсолютное позиционирование относительно левого верхнего угла родительского элемента</td>
-					<td>для таких элементов не работает margin</td>
+					<td>абсолютное позиционирование относительно левого верхнего угла родительского элемента с position: relative</td>
+					<td><p>Элемент ведет себя как float.</p><p>для таких элементов не работает margin</p></td>
+					<td>z-index</td>
 				</tr>
 				<tr>
 					<td>fixed</td>
 					<td>Начальное позиционирование относительно левого верхнего угла родительского элемента, но фиксация относительно окна браузера</td>
 					<td>скролл не меняет положения элемента на экране</td>
+					<td>z-index</td>
 				</tr>
 			</table>
-
+<hr>
+<!-- new HTML5 tags and features -->
+<p>take a look at this <a href="https://www.google.com.ua/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwj7-IXxidjOAhUH1iwKHVuVA3QQFggaMAA&url=http%3A%2F%2Fwww.w3schools.com%2Fhtml%2Fhtml5_new_elements.asp&usg=AFQjCNGvEQ0pHb4dQDKSfn7L-wOIljsrJg&sig2=7-ZJq8_dcEoeXgCXF1aipA&bvm=bv.129759880,d.bGg">page</a></p>
 
 			<hr>
 			<!--Here is a footer with links to all other pages-->	
@@ -142,7 +149,13 @@
 				<a href="bin/table_task1.html"><div class="menu">Tables</div></a>
 				<a href="bin/CnC.html"><div class="menu">Cake &amp; Coffee</div></a>
 				<a href="bin/CSS_span_t1.html"><div class="menu">Spans</div></a>
-				<a href="bin/blanc.html"><div class="menu">BLANC</div></a>
+				<div class="menu">
+					<ul class="hidden">
+						<li><a href="bin/table_task1.html" class="menu">Positioning_1</a></li>
+						<li><a href="bin/table_task_2.html" class="menu">Positioning_2</a></li>
+						<li><a href="bin/table_task_3.html" class="menu">Positioning_3</a></li>
+					</ul>
+				</div>
 				<a href="index.html#top"><div class="menu">HOME</div></a>
 			</div>
 		</div></div>
