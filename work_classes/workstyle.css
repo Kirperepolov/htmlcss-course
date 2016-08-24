@@ -1,0 +1,17 @@
+.main-menu {
+	list-style: none;
+
+}
+.main-menu li {
+	display: inline-block;
+}
+a {
+	background-color: #ca0000;
+	display: block;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	color: #fff;
+	line-height: 50px;
+	font-size: 14px
+}
