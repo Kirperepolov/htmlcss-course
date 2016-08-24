@@ -42,3 +42,6 @@ HTML_CSS/*
 .sass-cache/
 *.css.map
 >>>>>>> 497d6a5b449034758c202b998e9174f0ff534f9e
+
+# Temporary files
+*.fuse_hidden*

@@ -1,0 +1,55 @@
+@font-face {
+	font-family: HelveticaNeue;
+	src: url(HelveticaNeue.dfont);
+}
+body {
+	font-family: HelveticaNeue, Sans-serif;
+	background-color: #000;
+}
+.body {
+	max-width: 1366px;
+	max-height: 1492;
+	margin: auto;
+	background-color: #fff;
+}
+header {
+	background-color: #000;
+	max-width: 1366px;
+	height: 67px;
+}
+/*Clearfix*/
+header:after, .content:after {
+	clear: both;
+	content: '';
+	display: table;
+}
+.logo {
+	float: left;
+	width: auto;
+	height: auto;
+}
+.main-menu {
+	list-style: none;
+float: right;
+	color: #fff;
+}
+.main-menu li {
+	display: inline-block;
+	width: auto;
+	margin-right: 100px;
+	line-height: 67px;
+	text-transform: uppercase;
+}
+a {
+	display: block;
+	text-decoration: none;
+		color: inherit;;
+}
+#redbutton {
+	background-color: #ca0500;
+	text-transform: uppercase;
+	text-align: center;
+	color: #fff;
+	line-height: 50px;
+	font-size: 14px
+}
