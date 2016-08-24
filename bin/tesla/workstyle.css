@@ -18,7 +18,11 @@ header {
 	height: 67px;
 }
 /*Clearfix*/
-header:after, .content:after {
+header:after, 
+.content:before, 
+.content:after, 
+main:before, 
+main:after {
 	clear: both;
 	content: '';
 	display: table;
@@ -27,10 +31,11 @@ header:after, .content:after {
 	float: left;
 	width: auto;
 	height: auto;
+	line-height: 67px;
 }
 .main-menu {
 	list-style: none;
-float: right;
+	float: right;
 	color: #fff;
 }
 .main-menu li {
@@ -43,7 +48,25 @@ float: right;
 a {
 	display: block;
 	text-decoration: none;
-		color: inherit;;
+	color: inherit;
+}
+.top-img {
+	color: #fff;
+	background-image: url(img/banner.png);
+	opacity: 60%;
+	background-position: 0 -67px
+	max-width: 1366px;
+	height: 610px;
+}
+.top-block {
+	position: relative;
+	width: 40%;
+	margin: auto;
+}
+.top-block h1 {
+	font-size: 42px;
+	text-transform: uppercase;
+	align-content: center;
 }
 #redbutton {
 	background-color: #ca0500;
@@ -52,4 +75,44 @@ a {
 	color: #fff;
 	line-height: 50px;
 	font-size: 14px
+}
+.content {
+	max-width: 1366px;
+}
+.left, .right {
+	margin: 0;
+	padding-left: 7%;
+	padding-right: 7%;
+	width: 30%;
+	position: relative;
+	height: 704px;
+}
+.left {
+	float: left;
+}
+.right{
+	float: right;
+}
+.text-block {
+	margin: 0;
+}
+.right {
+	background-color: #212121;
+	color: #fff;
+}
+.geometry {
+	height: 0;
+	width: 0;
+	border-top: 704px solid transparent;
+	border-right: 50px solid #212121;
+	float: right;
+}
+hr {
+	width: 38px;
+	height: 2px;
+	background-color: #ca0500;
+	float: none;
+	border: none;
+	position: relative;
+	left: 7%;
 }
