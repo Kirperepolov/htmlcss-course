@@ -18,10 +18,10 @@ header {
 	height: 67px;
 }
 /*Clearfix*/
-header:after, 
-.content:before, 
-.content:after, 
-main:before, 
+header:after,
+.content:before,
+.content:after,
+main:before,
 main:after {
 	clear: both;
 	content: '';
@@ -37,11 +37,12 @@ main:after {
 	list-style: none;
 	float: right;
 	color: #fff;
+	width: 66%;
 }
 .main-menu li {
 	display: inline-block;
 	width: auto;
-	margin-right: 100px;
+	margin-right: 7%;
 	line-height: 67px;
 	text-transform: uppercase;
 }
@@ -50,13 +51,15 @@ a {
 	text-decoration: none;
 	color: inherit;
 }
+
 .top-img {
 	color: #fff;
 	background-image: url(img/banner.png);
+	background-size: 120% auto;
 	opacity: 0.6;
-	background-position: 0 -67px;
+	background-position: 0 -220px;
 	max-width: 1366px;
-	height: 610px;
+	height: 440px;
 }
 .shadow {
 	position: relative;
@@ -87,7 +90,9 @@ a {
 	text-align: center;
 	color: #fff;
 	line-height: 50px;
-	font-size: 14px
+	font-size: 14px;
+	margin: auto;
+	width: 166px;
 }
 .content {
 	max-width: 1366px;
@@ -130,4 +135,8 @@ hr {
 	border: none;
 	position: relative;
 	left: 7%;
+}
+.italic {
+	font-style: italic;
+	font-size: 11px;
 }
