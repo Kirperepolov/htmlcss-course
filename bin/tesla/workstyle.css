@@ -2,7 +2,9 @@
 	font-family: HelveticaNeue;
 	src: url(HelveticaNeue.dfont);
 }
-
+:root{
+	--content-height: 500px;
+}
 body {
 	font-family: HelveticaNeue, Sans-serif;
 	background-color: #000;
@@ -111,7 +113,7 @@ h1 {
 	padding-right: 9%;
 	width: 30%;
 	position: relative;
-	height: 704px;
+	height: var(--content-height);
 }
 .left {
 	float: left;
@@ -130,7 +132,7 @@ h1 {
 .geometry {
 	height: 0;
 	width: 0;
-	border-top: 704px solid #fff;
+	border-top: var(--content-height) solid #fff;
 	border-right: 70px solid #212121;
 	float: right;
 }
