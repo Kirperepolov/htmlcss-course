@@ -2,6 +2,7 @@
 	font-family: HelveticaNeue;
 	src: url(HelveticaNeue.dfont);
 }
+
 body {
 	font-family: HelveticaNeue, Sans-serif;
 	background-color: #000;
@@ -45,6 +46,7 @@ main:after {
 	margin-right: 7%;
 	line-height: 67px;
 	text-transform: uppercase;
+	float: right;
 }
 a {
 	display: block;
@@ -53,55 +55,60 @@ a {
 }
 
 .top-img {
-	color: #fff;
+
 	background-image: url(img/banner.png);
 	background-size: 120% auto;
 	opacity: 0.6;
 	background-position: 0 -220px;
 	max-width: 1366px;
-	height: 440px;
+	height: 670px;
 }
-.shadow {
-	position: relative;
-	opacity: 0.4;
-	background-color: #000;
-	width: auto;
-	height: 610px;
-	top: -160px;
-}
+
 .top-block {
+	color: #fff;
 	position: relative;
 	width: 40%;
 	margin: auto;
 	text-align: center;
-	padding-top: 1 em;
-	top: 7em;
-	z-index: 2;
+	top: -24em;
+		line-height: 50px;
 }
-.top-block h1 {
+h1 {
 	font-size: 41px;
 	text-transform: uppercase;
 	align-content: center;
-
+	font-weight: 700;
 }
 #redbutton {
 	background-color: #ca0500;
 	text-transform: uppercase;
 	text-align: center;
 	color: #fff;
-	line-height: 50px;
+
 	font-size: 14px;
 	margin: auto;
 	width: 166px;
 }
 .content {
 	max-width: 1366px;
-		background-color: #fff;
+	background-color: #fff;
+	position: relative;
+	top: -150px;
+}
+.content h2 {
+	font-size: 20px;
+	padding-top: 30px;
+	padding-bottom: 	5px;
+}
+.content p {
+	padding: 5px 0;
+	font-size: 13px;
+	line-height: 	20px;
 }
 .left, .right {
 	margin: 0;
-	padding-left: 7%;
-	padding-right: 7%;
+	padding-left: 8%;
+	padding-right: 9%;
 	width: 30%;
 	position: relative;
 	height: 704px;
@@ -124,7 +131,7 @@ a {
 	height: 0;
 	width: 0;
 	border-top: 704px solid #fff;
-	border-right: 50px solid #212121;
+	border-right: 70px solid #212121;
 	float: right;
 }
 hr {
@@ -132,11 +139,47 @@ hr {
 	height: 2px;
 	background-color: #ca0500;
 	float: none;
+	display: inline-block;
 	border: none;
 	position: relative;
-	left: 7%;
 }
 .italic {
 	font-style: italic;
-	font-size: 11px;
+	font-size: 16px;
+}
+footer {
+	position: relative;
+	top: -150px;
+	font-size: 10px;
+}
+.footBlocks {
+	display: inline-block;
+	padding: 1% 2% 1% 8%;
+	line-height: 30px;
+	float: 	left;
+	width: 15%;
+}
+h3 {
+	text-transform: uppercase;
+	font-size: 13px;
+	color: #fff;
+	line-height: 50px;	
+	border-bottom: 1px solid #212121;
+}
+footer ul {
+	list-style: none;
+	color: #888888;
+}
+.copyright {
+	margin-top: 2em;
+	color: #333333;
+	padding-top: 	10px;
+}
+.fb, .tw,.go {
+	height: 	50px;
+	width: 	50px;
+	border-radius: 25px;
+	background-color: #888888;
+	display: 	inline-block;
+	margin: 15px 15px 0 0;
 }
