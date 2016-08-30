@@ -97,11 +97,10 @@ h1 {
 	margin: auto;
 	width: 164px;
 	border: 1px solid #ca0500;
-	border-top: none;
 }
 #redbutton:hover {
 	background-color: #000;
-		/*border: 1px solid #ca0500;*/
+	opacity: 0.3;
 }
 .content {
 	max-width: 1366px;
