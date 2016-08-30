@@ -105,8 +105,8 @@ h1 {
 	border: 1px solid #ca0500;
 }
 #redbutton:hover {
-	background-color: #000;
-	opacity: 0.3;
+	background-color: #8d0300;
+	/*opacity: 0.3;*/
 }
 .content {
 	max-width: 1366px;
