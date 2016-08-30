@@ -1,6 +1,10 @@
 @font-face {
 	font-family: HelveticaNeue;
 	src: url(fonts/HelveticaNeue.ttf);
+	font-family: HelveticaNeueLight;
+	src: url(fonts/HelveticaNeue-Light.ttf);
+	font-family: HelveticaNeuebold;
+	src: url(fonts/HelveticaNeue-Bold.ttf);
 }
 :root{
 	--content-height: 704px;
@@ -52,6 +56,7 @@ footer:after {
 	line-height: 67px;
 	text-transform: uppercase;
 	float: right;
+	font-size: 15pt;
 }
 
 .main-menu li:hover{
@@ -87,13 +92,14 @@ h1 {
 	text-transform: uppercase;
 	align-content: center;
 	font-weight: 700;
+	font-family: HelveticaNeuebold;
 }
 #redbutton {
 	background-color: #ca0500;
 	text-transform: uppercase;
 	text-align: center;
 	color: #fff;
-	font-size: 10pt;
+	font-size: 14pt;
 	margin: auto;
 	width: 164px;
 	border: 1px solid #ca0500;
@@ -114,8 +120,8 @@ h1 {
 	padding-bottom: 	25px;
 }
 .content p {
-	padding: 13px 0;
-	font-size: 10pt;
+   padding: 13px 90px 13px 0px;
+	font-size: 11pt;
 	line-height: 	20px;
 }
 .left, .right {
