@@ -1,0 +1,23 @@
+body, aside {
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: column;
+	justify-content: space-between;
+	}
+body>*{
+	flex-grow: 1;
+}
+.mainCont{
+
+}
+
+
+aside {
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: column;
+	width: 18%;
+}
+aside * {
+	padding: 3px;
+}
