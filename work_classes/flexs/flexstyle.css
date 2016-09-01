@@ -1,0 +1,75 @@
+.container, .container2, .container3 {
+	background-color: #ca9898;
+	padding: 10px;
+	/*cross-browser flex*/
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	/*flex-direction: row-reverse; обратное направление*/
+	/*flex-direction: column-reverse;*/
+	flex-wrap: wrap;
+	justify-content: space-around;/*flex-start*/ /*flex-end*/ /*выравнивание контента по горизонтали*/
+}
+/*space-between   -  1й блок в крайнее левое положение, последний -  в крайнее правое положение
+* остальные блоки - равномерно между*/
+/*space-around - все блоки распределяются равномерно*/
+.container3 {
+	flex-direction: row;
+	height: 400px;
+	align-items: center; /*изучить возможные варианты, выравнивает по поперечной оси*/ 
+	direction: row;
+	/*		align-content: flex-start;*/ /*выравнивание контента по вертикали*/
+}
+.container3 .element {
+	flex-grow: 0;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.element {
+	/*height: 150px;*/
+	width: 50px;
+	background-color: #fff;
+	text-align: center;
+	padding: 10px;
+	/*line-height: 150px;*/
+	border: 1px solid #333333;
+	flex-grow: 1;
+	flex-basis: 100px; /*указывает минимальную ширину элемента, 
+	*при которой срабатывает flex-wrap: wrap*/
+}/*
+.element:first-child {
+	margin-right: auto;
+}
+.element:last-child {
+	margin-left: auto;
+}
+.element:nth-of-type(4){
+	margin-left: auto;
+	}*/
+	/*flex-grow позволяет распределить свободное место между элементами в 
+	*пропорции, согласно значению*/
+	.element:first-child {
+
+	order: 1; /*горизонтальный индекс, указывающий порядок. по-умолчанию 0
+	*чем больше, тем дальше от начала строки*/
+	flex-shrink: 3; /*чем больше значение, тем динамичнее/эффективнее сжимается 
+	элемент по сравнению с остальными. фактически не работает при flex-wrap: wrap;*/
+}
+.element:nth-of-type(6){
+	order:4; 
+}
+.element:nth-of-type(2){
+	order: 3;
+	align-self: flex-start; /*выравнивает сам элемент по поперечной оси*/
+}
+.element:nth-of-type(3){
+	order: 2;
+}
+.element:nth-of-type(4){
+	order: 5;
+}
+
