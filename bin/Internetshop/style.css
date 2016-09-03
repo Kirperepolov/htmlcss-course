@@ -7,7 +7,7 @@ body, aside {
 body>*{
   flex-grow: 1;
 }
-header, footer {
+header, footer, .menu {
   height: 67px;
   background-color: #f7c61d;
   display: -webkit-flex;
@@ -15,7 +15,16 @@ header, footer {
   display: -ms-flex;
   display: -o-flex;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+}
+.menuitem {
+  flex-grow: 1
+  text-transform: uppercase;
+  border: 1px solid #dd5555;
+}
+.img {
+  background-image: url(images/logo.png);
+  line-height: 100%;
 }
 .mainCont{
   display: -webkit-flex;
