@@ -1,0 +1,238 @@
+/*FONTS*/
+@font-face {
+	font-family: PFDinTextCompPro-Medium;
+	src: url(fonts/PFDinTextCompPro-Medium.ttf);
+}
+@font-face {
+	font-family: PFDinTextCompPro-Regular;
+	src: url(fonts/PFDinTextCompPro-Regular.ttf);
+}
+/*Variables*/
+:root{
+	--blue: #24c3e0;
+}
+		/*HEADER*/
+header {
+	background-color: #000;
+}
+header ul, 
+.navigation2 ul {
+	list-style: none;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: flex-end;
+	margin: 0;
+}
+header ul li {
+	color: #c5c5c5;
+	padding-left: 32px;
+	padding-right: 32px;
+	line-height: 30px;
+	font-family: Arial, sans-serif;
+	font-size: 12pt;
+}
+header ul li:hover {
+	color: #f3f6f6;
+	cursor: pointer;
+}
+li a {
+	text-decoration: none;
+	color: inherit;
+	}
+li a:hover {
+	text-decoration: inherit;
+	color: inherit;
+}
+.login:hover {
+	color: #14b4d1;
+}
+/*MENU*/
+.col-sm-10 {
+	padding-left: 0;
+	padding-right: 0;
+}
+nav.col-md-12,
+main.col-md-12 {
+	padding-left: 100px;
+	padding-right: 100px;
+}
+.logotype {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-wrap: nowrap;
+	-moz-flex-wrap: nowrap;
+	-ms-flex-wrap: nowrap;
+	-o-flex-wrap: nowrap;
+	flex-wrap: nowrap;
+	align-items: center;
+	height: 94px;
+}
+.logotype span,
+.skypephone span {
+	line-height: 47px;
+	word-wrap: normal;
+}
+.logo {
+	text-transform: uppercase;
+	color: #000;
+	font-family: PFDinTextCompPro-Medium, Arial;
+	font-size: 30pt;
+}
+.logotype .E {
+	background:  url(img/logotype.png);
+	width: 13px;
+	height: 30pt;
+	-webkit-background-size: 140%;
+	background-size: 140%;
+	background-repeat: no-repeat;
+	background-position: left center;
+	text-transform: uppercase;
+	font-size: 30pt;
+	color: transparent;
+	display: inline-block;
+	margin: 0 3px;
+}
+.skypephone {
+	text-transform: uppercase;
+	font-size: 24pt;
+	font-family: PFDinTextCompPro-Regular;
+	color: #000;
+}
+.glyphicon-earphone {
+	color: var(--blue);
+	font-size: 14pt;
+}
+.glyphicon-search {
+	transform: scale(-1, 1);
+	color: var(--blue);
+	font-size: 14pt;
+}
+.cart {
+	height: 80px;
+	position: absolute;
+	background-color: var(--blue);
+	bottom: 0;
+	right: 15px;
+	padding: 0;
+}
+.navigation1 .col-xs-12,
+.navigation2 .col-xs-12 {
+	padding-left: 0;
+	padding-right: 0;
+	line-height: 47px;
+}
+.navigation1 {
+	display: relative;
+}
+.navigation2 ul{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+}
+.navigation2 li {
+	font-family: PFDinTextCompPro-Medium;
+	font-size: 20pt;
+	color: #000;
+	line-height: 47px;
+	text-transform: uppercase;
+	flex-grow: 1;
+}
+.navigation2 li:hover {
+box-shadow: 0 0 15px #bbb;
+}
+.searchbar form {
+	display: inline-block;
+	border: 1px solid #cdcdcd;
+	width: calc(100%-18px);
+}
+input[type="search"] {
+	border: none;
+	font-size: 18pt;
+	width: 100%;
+	height: 30px;
+	outline: none;
+	color: #c5c5c5;
+}
+input[type="search"]: focus {
+	color: #000;
+}
+nav hr {
+	background-color: #000;
+	height: 3px;
+	width: 100%;
+}
+/*SIDEMENU*/
+.charname {
+	color: #000;
+	font-size: 16pt;
+	text-transform: uppercase;
+	padding-top: 25px;
+	padding-bottom: 8px;
+}
+.filter label {
+	font-family: Arial;
+	font-size: 13pt;
+	color: 333333;
+}
+.filter .charnumber {
+	color: #888888;
+}
+	/*input[type=checkbox]:checked + label:before {
+	content: "\2713";
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+	font-size: 15px;
+	color: var(--blue);
+	text-align: center;
+	line-height: 15px;
+	}*/
+/*MAINLIST*/
+.item-list {
+	background-color: #f3f6f6;
+}
+.item-list>div{
+	background-color: #fff;
+}
+.prodname {
+	font-family: Arial;
+	font-size: 15pt;
+	color: #555555;
+}
+.prodimage {
+	/*width: 100%;*/
+	background-size: 100%;
+  width: 271px;
+  height: 182px;
+}
+.apple6ss{
+		background: url(img/apple6ss.png);
+}
+.prodprice {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	line-height: 31px;
+	font-family: PFDinTextCompPro-Medium;
+}
+.price {
+	font-size: 22pt;
+}
+a.addbutton {
+	display: block;
+	font-size: 16pt;
+	color: #fff;
+	background-color: var(--blue);
+	padding-left: 12px;
+	padding-right: 12px;
+}
