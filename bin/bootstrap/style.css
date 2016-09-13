@@ -11,7 +11,7 @@
 :root{
 	--blue: #24c3e0;
 }
-/*HEADER*/
+		/*HEADER*/
 header {
 	background-color: #000;
 }
@@ -38,11 +38,11 @@ header ul li:hover {
 	color: #f3f6f6;
 	cursor: pointer;
 }
-a {
+li a {
 	text-decoration: none;
 	color: inherit;
-}
-a:hover {
+	}
+li a:hover {
 	text-decoration: inherit;
 	color: inherit;
 }
@@ -128,7 +128,7 @@ main.col-md-12 {
 	line-height: 47px;
 }
 .navigation1 {
-	position: relative;
+	display: relative;
 }
 .navigation2 ul{
 	display: -webkit-flex;
@@ -147,7 +147,7 @@ main.col-md-12 {
 	flex-grow: 1;
 }
 .navigation2 li:hover {
-	box-shadow: 0 0 15px #bbb;
+box-shadow: 0 0 15px #bbb;
 }
 .searchbar form {
 	display: inline-block;
@@ -162,7 +162,7 @@ input[type="search"] {
 	outline: none;
 	color: #c5c5c5;
 }
-input[type="search"]:focus {
+input[type="search"]: focus {
 	color: #000;
 }
 nav hr {
@@ -181,7 +181,7 @@ nav hr {
 .filter label {
 	font-family: Arial;
 	font-size: 13pt;
-	color: #333333;
+	color: 333333;
 }
 .filter .charnumber {
 	color: #888888;
@@ -194,178 +194,45 @@ nav hr {
 	text-align: center;
 	line-height: 15px;
 	}*/
-	/*MAINLIST*/
-	.item-list {
-		background-color: #f3f6f6;
-	}
-	.item-list>.items {
-		background-color: #fff;
-		min-height: 275px;
-		margin-top: 15px;
-		margin-bottom: 15px;
-	}
-	.prodname {
-		font-family: Arial;
-		font-size: 15pt;
-		color: #555555;
-		line-height: 32px;
-	}
-	.prodimage {
-		max-width: 271px;
-		height: 182px;
-		border-bottom: 2px solid #e8eeef;
-	}
-	.apple616sg,
-	.apple6s16rg,
-	.apple6spsg,
-	.apple4s,
-	.apple6s128gl,
-	.apple6s16s,
-	.apple5s16sg,
-	.apple6s128sg
-	{
-		background-repeat: no-repeat;
-		background-position: center center;
-		background-size: auto;
-	}
-	.apple6sps{
-		background: url(img/apple6sps.png);
-		background-repeat: no-repeat;
-		background-position: center center;
-		background-size: auto;
-	}
-	.apple616sg{
-		background-image: url(img/apple616sg.png);
-	}
-	.apple6s16rg{
-		background-image: url(img/apple6s16rg.png);
-	}
-	.apple6spsg{
-		background-image: url(img/apple6spsg.png);
-	}
-	.apple4s {
-		background-image: url(img/apple4s.png);
-	}
-	.apple6s128gl {
-		background-image: url(img/apple6s128gl.png);
-	}
-	.apple6s16s {
-		background-image: url(img/apple6s16s.png);
-	}
-	.apple5s16sg {
-		background-image: url(img/apple5s16sg.png);
-	}
-	.apple6s128sg {
-		background-image: url(img/apple6s128sg.png);
-	}
-	.prodprice {
-		display: -webkit-flex;
-		display: -moz-flex;
-		display: -ms-flex;
-		display: -o-flex;
-		display: flex;
-		justify-content: space-between;
-		line-height: 31px;
-		font-family: PFDinTextCompPro-Medium;
-	}
-	.price {
-		font-size: 22pt;
-	}
-	a.addbutton {
-		display: block;
-		font-size: 16pt;
-		color: #fff;
-		background-color: var(--blue);
-		padding-left: 12px;
-		padding-right: 12px;
-		text-align: center;
-	}
-
-	.rating {
-		unicode-bidi: bidi-override;
-		direction: rtl;
-		color: var(--blue);
-	}
-	.rating > span {
-		display: inline-block;
-		position: relative;
-		width: 1.1em;
-	}
-	.rating > span:hover:before,
-	.rating > span:hover ~ span:before {
-		content: "\2605";
-		position: absolute;
-	}
-	.load-more {
-		padding-top: 45px;
-		padding-bottom: 65px;
-		display: -webkit-flex;
-		display: -moz-flex;
-		display: -ms-flex;
-		display: -o-flex;
-		display: flex;
-		justify-content: center;
-	}
-
-	a.load-more-button {
-		font-family: PFDinTextCompPro-Regular, Arial;
-		font-size: 18pt;
-		color: var(--blue);
-		padding: 0 60px;
-		line-height: 40px;
-		border: 2px solid var(--blue);
-		background-color: #fff;
-	}
-	a.load-more-button:hover {
-		color: #fff;
-		background-color: var(--blue);
-	}
-
-	/*FOOTER*/
-	.footer-items {
-		border-top: 3px solid #000;
-		background-color: #fff;
-		min-height: 105px;
-		display: -webkit-flex;
-		display: -moz-flex;
-		display: -ms-flex;
-		display: -o-flex;
-		display: flex;
-		-ms-align-items: center;
-		align-items: center;
-	}
-	footer .logotype {
-		background-image: url(img/logotype_small.png);
-		width: 132px;
-		height: 21px;
-		display: inline-block;
-	}
-	.copyright {
-		font-family: Arial;
-		font-size: 11pt;
-		color: #999999;
-		line-height: 21px;
-		padding: 0 2px;
-		display: inline-block;
-	}
-	.worktime, .contact1, .email {
-		font-family: Arial;
-		font-size: 12pt;
-	}
-	.worktime1, .contact1 {
-		font-weight: bold;
-		color: #000;
-	}
-	.worktime2 {
-		color: #888888;
-	}
-	.contacts {
-		border-left: ;
-		border-right: ;
-	}
-	.email {
-		color: var(--blue);
-	}
-	.email:hover {
-		font-weight: bold;
-	}
+/*MAINLIST*/
+.item-list {
+	background-color: #f3f6f6;
+}
+.item-list>div{
+	background-color: #fff;
+}
+.prodname {
+	font-family: Arial;
+	font-size: 15pt;
+	color: #555555;
+}
+.prodimage {
+	/*width: 100%;*/
+	background-size: 100%;
+  width: 271px;
+  height: 182px;
+}
+.apple6ss{
+		background: url(img/apple6ss.png);
+}
+.prodprice {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	line-height: 31px;
+	font-family: PFDinTextCompPro-Medium;
+}
+.price {
+	font-size: 22pt;
+}
+a.addbutton {
+	display: block;
+	font-size: 16pt;
+	color: #fff;
+	background-color: var(--blue);
+	padding-left: 12px;
+	padding-right: 12px;
+}
