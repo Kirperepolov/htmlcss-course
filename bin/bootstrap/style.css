@@ -120,12 +120,28 @@ main.col-md-12 {
 	bottom: 0;
 	right: 15px;
 	padding: 0;
+	color: #fff;
+	font-family: Arial, sans-serif;
+	font-size: 12pt;
+}
+.cart1,.cart2 {
+	text-align: center;
+	line-height: 40px;
+	padding: 0;
+}
+/*.cart1:before {
+
+}*/
+.cart2 {
+	font-family: PFDinTextCompPro-Medium;
+	font-size: 20pt;
 }
 .navigation1 .col-xs-12,
 .navigation2 .col-xs-12 {
 	padding-left: 0;
 	padding-right: 0;
 	line-height: 47px;
+	max-height: 47px;
 }
 .navigation1 {
 	position: relative;
