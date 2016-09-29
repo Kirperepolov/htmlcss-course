@@ -120,12 +120,28 @@ main.col-md-12 {
 	bottom: 0;
 	right: 15px;
 	padding: 0;
+	color: #fff;
+	font-family: Arial, sans-serif;
+	font-size: 12pt;
+}
+.cart1,.cart2 {
+	text-align: center;
+	line-height: 40px;
+	padding: 0;
+}
+/*.cart1:before {
+
+}*/
+.cart2 {
+	font-family: PFDinTextCompPro-Medium;
+	font-size: 20pt;
 }
 .navigation1 .col-xs-12,
 .navigation2 .col-xs-12 {
 	padding-left: 0;
 	padding-right: 0;
 	line-height: 47px;
+	max-height: 47px;
 }
 .navigation1 {
 	display: relative;
@@ -194,6 +210,7 @@ nav hr {
 	text-align: center;
 	line-height: 15px;
 	}*/
+<<<<<<< HEAD
 /*MAINLIST*/
 .item-list {
 	background-color: #f3f6f6;
@@ -236,3 +253,180 @@ a.addbutton {
 	padding-left: 12px;
 	padding-right: 12px;
 }
+=======
+	/*MAINLIST*/
+	.item-list {
+		background-color: #f3f6f6;
+	}
+	.item-list>.items {
+		background-color: #fff;
+		min-height: 275px;
+		margin-top: 15px;
+		margin-bottom: 15px;
+	}
+	.prodname {
+		font-family: Arial;
+		font-size: 15pt;
+		color: #555555;
+		line-height: 32px;
+	}
+	.prodimage {
+		max-width: 271px;
+		height: 182px;
+		border-bottom: 2px solid #e8eeef;
+	}
+	.apple616sg,
+	.apple6s16rg,
+	.apple6spsg,
+	.apple4s,
+	.apple6s128gl,
+	.apple6s16s,
+	.apple5s16sg,
+	.apple6s128sg
+	{
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: auto;
+	}
+	.apple6sps{
+		background: url(img/apple6sps.png);
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: auto;
+	}
+	.apple616sg{
+		background-image: url(img/apple616sg.png);
+	}
+	.apple6s16rg{
+		background-image: url(img/apple6s16rg.png);
+	}
+	.apple6spsg{
+		background-image: url(img/apple6spsg.png);
+	}
+	.apple4s {
+		background-image: url(img/apple4s.png);
+	}
+	.apple6s128gl {
+		background-image: url(img/apple6s128gl.png);
+	}
+	.apple6s16s {
+		background-image: url(img/apple6s16s.png);
+	}
+	.apple5s16sg {
+		background-image: url(img/apple5s16sg.png);
+	}
+	.apple6s128sg {
+		background-image: url(img/apple6s128sg.png);
+	}
+	.prodprice {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		justify-content: space-between;
+		line-height: 31px;
+		font-family: PFDinTextCompPro-Medium;
+	}
+	.price {
+		font-size: 22pt;
+	}
+	a.addbutton {
+		display: block;
+		font-size: 16pt;
+		color: #fff;
+		background-color: var(--blue);
+		padding-left: 12px;
+		padding-right: 12px;
+		text-align: center;
+	}
+
+	.rating {
+		unicode-bidi: bidi-override;
+		direction: rtl;
+		color: var(--blue);
+	}
+	.rating > span {
+		display: inline-block;
+		position: relative;
+		width: 1.1em;
+	}
+	.rating > span:hover:before,
+	.rating > span:hover ~ span:before {
+		content: "\2605";
+		position: absolute;
+	}
+	.load-more {
+		padding-top: 45px;
+		padding-bottom: 65px;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		justify-content: center;
+	}
+
+	a.load-more-button {
+		font-family: PFDinTextCompPro-Regular, Arial;
+		font-size: 18pt;
+		color: var(--blue);
+		padding: 0 60px;
+		line-height: 40px;
+		border: 2px solid var(--blue);
+		background-color: #fff;
+	}
+	a.load-more-button:hover {
+		color: #fff;
+		background-color: var(--blue);
+	}
+
+	/*FOOTER*/
+	.footer-items {
+		border-top: 3px solid #000;
+		background-color: #fff;
+		min-height: 105px;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		-ms-align-items: center;
+		align-items: center;
+	}
+	footer .logotype {
+		background-image: url(img/logotype_small.png);
+		width: 132px;
+		height: 21px;
+		display: inline-block;
+	}
+	.copyright {
+		font-family: Arial;
+		font-size: 11pt;
+		color: #999999;
+		line-height: 21px;
+		padding: 0 2px;
+		display: inline-block;
+	}
+	.worktime, .contact1, .email {
+		font-family: Arial;
+		font-size: 12pt;
+	}
+	.worktime1, .contact1 {
+		font-weight: bold;
+		color: #000;
+	}
+	.worktime2 {
+		color: #888888;
+	}
+	.contacts {
+		border-left: ;
+		border-right: ;
+	}
+	.email {
+		color: var(--blue);
+	}
+	.email:hover {
+		font-weight: bold;
+	}
+>>>>>>> refs/remotes/origin/bootstrap
