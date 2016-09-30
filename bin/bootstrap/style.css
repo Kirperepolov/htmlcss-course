@@ -11,7 +11,7 @@
 :root{
 	--blue: #24c3e0;
 }
-/*HEADER*/
+		/*HEADER*/
 header {
 	background-color: #000;
 }
@@ -38,11 +38,11 @@ header ul li:hover {
 	color: #f3f6f6;
 	cursor: pointer;
 }
-a {
+li a {
 	text-decoration: none;
 	color: inherit;
-}
-a:hover {
+	}
+li a:hover {
 	text-decoration: inherit;
 	color: inherit;
 }
@@ -144,7 +144,7 @@ main.col-md-12 {
 	max-height: 47px;
 }
 .navigation1 {
-	position: relative;
+	display: relative;
 }
 .navigation2 ul{
 	display: -webkit-flex;
@@ -163,7 +163,7 @@ main.col-md-12 {
 	flex-grow: 1;
 }
 .navigation2 li:hover {
-	box-shadow: 0 0 15px #bbb;
+box-shadow: 0 0 15px #bbb;
 }
 .searchbar form {
 	display: inline-block;
@@ -178,7 +178,7 @@ input[type="search"] {
 	outline: none;
 	color: #c5c5c5;
 }
-input[type="search"]:focus {
+input[type="search"]: focus {
 	color: #000;
 }
 nav hr {
@@ -197,7 +197,7 @@ nav hr {
 .filter label {
 	font-family: Arial;
 	font-size: 13pt;
-	color: #333333;
+	color: 333333;
 }
 .filter .charnumber {
 	color: #888888;
@@ -210,6 +210,50 @@ nav hr {
 	text-align: center;
 	line-height: 15px;
 	}*/
+<<<<<<< HEAD
+/*MAINLIST*/
+.item-list {
+	background-color: #f3f6f6;
+}
+.item-list>div{
+	background-color: #fff;
+}
+.prodname {
+	font-family: Arial;
+	font-size: 15pt;
+	color: #555555;
+}
+.prodimage {
+	/*width: 100%;*/
+	background-size: 100%;
+  width: 271px;
+  height: 182px;
+}
+.apple6ss{
+		background: url(img/apple6ss.png);
+}
+.prodprice {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	line-height: 31px;
+	font-family: PFDinTextCompPro-Medium;
+}
+.price {
+	font-size: 22pt;
+}
+a.addbutton {
+	display: block;
+	font-size: 16pt;
+	color: #fff;
+	background-color: var(--blue);
+	padding-left: 12px;
+	padding-right: 12px;
+}
+=======
 	/*MAINLIST*/
 	.item-list {
 		background-color: #f3f6f6;
@@ -385,3 +429,4 @@ nav hr {
 	.email:hover {
 		font-weight: bold;
 	}
+>>>>>>> refs/remotes/origin/bootstrap
