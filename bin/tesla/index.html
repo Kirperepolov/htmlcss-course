@@ -2,22 +2,47 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
-	<link rel="stylesheet" href="../css_reset.css">
-	<link rel="stylesheet" href="workstyle.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- to set the real scale of a page -->
+	<title>ExotiCAR</title>
+	<link rel="stylesheet" href="../css/css_reset.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/workstyle.css">
 </head>
 <body>
 	<div class="body">
 		<header>
-			<div class="logo">
-				<img src="img/Logo.png" alt="logo">
-			</div>
-			<nav class="main-menu">
-				<li><a href="">Home</a></li>
-				<li><a href="">About</a></li>
-				<li><a href="">Services</a></li>
-				<li><a href="">Investors</a></li>
-				<li><a href="">Contact</a></li>
+			<!-- bootstrap start -->
+			<nav class="main-menu navbar navbar-default">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<div class="logo">
+							<a class="navbar-brand" href="index.html">
+								<img alt="Brand" src="img/Logo.png">
+							</a>
+						</div>
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav">
+							<li><a href="">Home</a></li>
+							<li><a href="">About</a></li>
+							<li><a href="">Services</a></li>
+							<li><a href="">Investors</a></li>
+							<li><a href="">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- bootstrap end -->
+
+
+
 			</nav>
 		</header>
 		<main>
@@ -28,70 +53,79 @@
 					<h1>creating the future</h1>
 					<p>Accelerate the world’s transition to sustainable energy</p>
 					<a href="index.html" id="redbutton">learn more</a>
+				</div>
+			</div>
+			<div class="content">
+				<div class="left">
+					<h2>About Tesla</h2>
+					<hr>
+					<div class="text-block">
+						<p class="italic">Tesla’s mission is to accelerate the world’s transition to sustainable energy.</p>
+						<p>Tesla Motors was founded in 2003 by a group of engineers in Silicon Valley who wanted to prove that electric cars could be better than gasoline-powered cars. With instant torque, incredible power, and zero emissions, Tesla’s products would be cars without compromise. Each new generation would be increasingly affordable, helping the company work towards its mission: to accelerate the world’s transition to sustainable transport.</p>
+						<p>Tesla’s engineers first designed a powertrain for a sports car built around an AC induction motor, patented in 1888 by Nikola Tesla, the inventor who inspired the company’s name. The resulting Tesla Roadster was launched in 2008. Accelerating from 0 to 60 mph in 3.7 seconds and achieving a range of 245 miles per charge of its lithium ion battery, the Roadster set a new standard for electric mobility. Tesla would sell more than 2,400 Roadsters, now on the road in more than 30 countries.</p>
 					</div>
-				<div class="content">
-					<div class="left">
-						<h2>About Tesla</h2>
-						<hr>
-						<div class="text-block">
-							<p class="italic">Tesla’s mission is to accelerate the world’s transition to sustainable energy.</p>
-							<p>Tesla Motors was founded in 2003 by a group of engineers in Silicon Valley who wanted to prove that electric cars could be better than gasoline-powered cars. With instant torque, incredible power, and zero emissions, Tesla’s products would be cars without compromise. Each new generation would be increasingly affordable, helping the company work towards its mission: to accelerate the world’s transition to sustainable transport.</p>
-							<p>Tesla’s engineers first designed a powertrain for a sports car built around an AC induction motor, patented in 1888 by Nikola Tesla, the inventor who inspired the company’s name. The resulting Tesla Roadster was launched in 2008. Accelerating from 0 to 60 mph in 3.7 seconds and achieving a range of 245 miles per charge of its lithium ion battery, the Roadster set a new standard for electric mobility. Tesla would sell more than 2,400 Roadsters, now on the road in more than 30 countries.</p>
-						</div>
+				</div>
+				<div class="geometry"></div>
+				<div class="right">
+					<h2>Investors Overview</h2>
+					<hr>
+					<div class="text-block">
+						<p class="italic">We believe that incumbent automobile manufacturers are at a crossroads and face significant industry-wide challenges.</p>
+						<p>The reliance on the gasoline-powered internal combustion engine as the principal automobile powertrain technology has raised environmental concerns, created dependence among industrialized and developing nations on oil largely imported from foreign nations and exposed consumers to volatile fuel prices. In addition, we believe the legacy investments made by incumbent automobile manufacturers in manufacturing and technology related to the internal combustion engine have to date inhibited rapid innovation in alternative fuel powertrain technologies.</p>
+						<p>We believe these challenges offer a historic opportunity for companies with innovative electric powertrain technologies and that are unencumbered with legacy investments in the internal combustion engine to lead the next technological era of the automotive industry.</p>
 					</div>
-					<div class="geometry"></div>
-					<div class="right">
-						<h2>Investors Overview</h2>
-						<hr>
-						<div class="text-block">
-							<p class="italic">We believe that incumbent automobile manufacturers are at a crossroads and face significant industry-wide challenges.</p>
-							<p>The reliance on the gasoline-powered internal combustion engine as the principal automobile powertrain technology has raised environmental concerns, created dependence among industrialized and developing nations on oil largely imported from foreign nations and exposed consumers to volatile fuel prices. In addition, we believe the legacy investments made by incumbent automobile manufacturers in manufacturing and technology related to the internal combustion engine have to date inhibited rapid innovation in alternative fuel powertrain technologies.</p>
-							<p>We believe these challenges offer a historic opportunity for companies with innovative electric powertrain technologies and that are unencumbered with legacy investments in the internal combustion engine to lead the next technological era of the automotive industry.</p>
-						</div>
-					</div>
+				</div>
 
-				</div>
-			</main>
-			<footer>
-				<div class="footBlocks">
-					<h3>About</h3>
-					<ul>
-						<li><a href="index.html">Privacy Policy</a></li>
-						<li><a href="index.html">Terms of Use</a></li>
-						<li><a href="index.html">News</a></li>
-						<li><a href="index.html">Events</a></li>
-					</ul>
-				</div>
-				<div class="footBlocks">
-					<h3>Get Involved</h3>
-					<ul>
-						<li><a href="index.html">Work with Us</a></li>
-						<li><a href="index.html">Subscribe for Newsletter</a></li>
-						<li><a href="index.html">Forum</a></li>
-						<li> </li>
-					</ul>
-				</div>
-				<div class="footBlocks">
-					<h3>Help Center</h3>
-					<ul>
-						<li><a href="index.html">FAQs</a></li>
-						<li><a href="index.html">Contact Us</a></li>
-						<li><a href="index.html">How to Start a Challenge</a></li>
-						<li> </li>
-					</ul>
-				</div>
-				<div class="socials">
-					<div class="footBlocks">			
-						<h3>socials</h3>
-						<div class="soc">
-							<div class="fb"></div>
-							<div class="tw"></div>
-							<div class="go"></div>
-						</div>
+			</div>
+		</main>
+		<footer>
+			<div class="footBlocks">
+				<h3>About</h3>
+				<ul>
+					<li><a href="index.html">Privacy Policy</a></li>
+					<li><a href="index.html">Terms of Use</a></li>
+					<li><a href="index.html">News</a></li>
+					<li><a href="index.html">Events</a></li>
+				</ul>
+			</div>
+			<div class="footBlocks">
+				<h3>Get Involved</h3>
+				<ul>
+					<li><a href="index.html">Work with Us</a></li>
+					<li><a href="index.html">Subscribe for Newsletter</a></li>
+					<li><a href="index.html">Forum</a></li>
+					<li> </li>
+				</ul>
+			</div>
+			<div class="footBlocks">
+				<h3>Help Center</h3>
+				<ul>
+					<li><a href="index.html">FAQs</a></li>
+					<li><a href="index.html">Contact Us</a></li>
+					<li><a href="index.html">How to Start a Challenge</a></li>
+					<li> </li>
+				</ul>
+			</div>
+			<div class="socials">
+				<div class="footBlocks">			
+					<h3>socials</h3>
+					<div class="soc">
+						<div class="fb"></div>
+						<div class="tw"></div>
+						<div class="go"></div>
 					</div>
-					<div class="copyright">&copy; 2016. ExotiCar. All Rights Reserved</div>
 				</div>
-			</footer>
-		</div>
-	</body>
-	</html>
+				<div class="copyright">&copy; 2016. ExotiCar. All Rights Reserved</div>
+			</div>
+		</footer>
+	</div>
+
+	<!-- JQUERY -->
+	<script
+	src="https://code.jquery.com/jquery-2.2.4.min.js"
+	integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+	crossorigin="anonymous"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
