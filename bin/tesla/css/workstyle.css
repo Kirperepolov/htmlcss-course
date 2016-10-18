@@ -54,7 +54,6 @@ footer:after {
 	color: #fff;
 }
 .main-menu li {
-	display: inline-block;
 	width: auto;
 	margin-right: 5%;
 	line-height: 67px;
@@ -109,7 +108,7 @@ a {
 	top: 210px;
 	line-height: 50px;
 }
-h1 {
+.top-block h1 {
 	font-size: 41pt;
 	text-transform: uppercase;
 	align-content: center;
@@ -210,109 +209,149 @@ footer {
 	width: 80%;
 	margin: 0;
 	padding: 0;
-}*/
-h3 {
-	text-transform: uppercase;
-	font-size: 13pt;
-	color: #fff;
-	line-height: 50px;
-	border-bottom: 1px solid #212121;
-}
-footer ul {
-	list-style: none;
-	color: #999999;
-}
-.copyright {
-	margin-top: 2em;
-	color: #585858;
-	padding-top: 	10px;
-	clear: both;
-}
-.fb, .tw,.go {
-	height: 	40px;
-	width: 	40px;
-	border-radius: 20px;
-	background-color: #888888;
-	display: 	inline-block;
-	margin: 15px 15px 0 0;
-	background-image: url(../img/socials.png);
-}
-.tw:hover {
-	background-position: 0 -40px;
-}
-.fb {
-	background-position: 40px 0;
-}
-.go {
-	background-position: 80px 0;
-}
-.fb:hover {
-	background-position: 40px -40px;
-}
-.go:hover {
-	background-position: 80px -40px;
-}
-
-/*Some responsivenes*/
-/*WIDE SCREEN*/
-@media (min-width: 992px) and (max-width: 1199px) {
-	/*header*/
-	.top-img {
-		height: 414px;
-		background-image: url(../img/banner-xxs.png) no-repeat;
+	}*/
+	h3 {
+		text-transform: uppercase;
+		font-size: 13pt;
+		color: #fff;
+		line-height: 50px;
+		border-bottom: 1px solid #212121;
 	}
-	/*main*/
-}
-/*MEDIUM SCREEN*/
-@media (min-width: 768px) and (max-width: 991px) {
-	/*header*/
-	.top-img {
-		height: 320px;
-		background-image: url(../img/banner-lg.png) no-repeat;
+	footer ul {
+		list-style: none;
+		color: #999999;
 	}
-	.logo {
-		padding-left: 100px;
+	.copyright {
+		margin-top: 2em;
+		color: #585858;
+		padding-top: 	10px;
+		clear: both;
 	}
-	
-}
-/*NARROW SCREEN*/
-@media (min-width: 540px) and (max-width: 767px) {
-	/*header*/
-	.top-img {
-		height: 225px;
-		background-image: url(../img/banner-md.png) no-repeat;
+	.fb, .tw,.go {
+		height: 	40px;
+		width: 	40px;
+		border-radius: 20px;
+		background-color: #888888;
+		display: 	inline-block;
+		margin: 15px 15px 0 0;
+		background-image: url(../img/socials.png);
 	}
-	.logo {
-		padding-left: 50px;
+	.tw:hover {
+		background-position: 0 -40px;
 	}
-	/*main*/
-	.content {
-		display: block;
+	.fb {
+		background-position: 40px 0;
 	}
-	:root{
-		--content-height: auto;
+	.go {
+		background-position: 80px 0;
 	}
-	.geometry {
-		display: none;
+	.fb:hover {
+		background-position: 40px -40px;
+	}
+	.go:hover {
+		background-position: 80px -40px;
 	}
 
+	/*Some responsivenes*/
+	/*EXTRA WIDE*/
+	@media (min-width: 1200px) {
+		.main-menu li {
+			display: inline-block;
+		}
+	}
+	/*WIDE SCREEN*/
+	@media (min-width: 992px) and (max-width: 1199px) {
+		/*header*/
+		.top-img {
+			height: 414px;
+			background-image: url(../img/banner-xxs.png) no-repeat;
+		}
+		/*main*/
+		.main-menu li {
+			display: inline-block;
+		}
+		.top-block {
+			line-height: 40px;
+		}
+		.top-block h1 {
+			font-size: 38pt;
+		}
+	}
 
-}
-/*EXTRA-NARROW SCREEN*/
-@media (max-width: 539px) {
-	/*header*/
-	.top-img {
-		height: 157px;
-		background-image: url(../img/banner-xs.png) no-repeat;
+	/*MEDIUM SCREEN*/
+	@media (min-width: 768px) and (max-width: 991px) {
+		/*header*/
+		.top-img {
+			height: 320px;
+			background-image: url(../img/banner-lg.png) no-repeat;
+		}
+		.logo {
+			padding-left: 100px;
+		}
+		.main-menu li {
+			display: inline-block;
+		}
+		.top-block {
+			line-height: 32px;
+			top: 150px;
+		}
+		.top-block h1 {
+			font-size: 28pt;
+		}
+
 	}
-	/*main*/
-	.content {
-		display: block;
+	/*NARROW SCREEN*/
+	@media (min-width: 540px) and (max-width: 767px) {
+		/*header*/
+		.top-img {
+			height: 225px;
+			background-image: url(../img/banner-md.png) no-repeat;
+		}
+		.logo {
+			padding-left: 50px;
+		}
+		/*main*/
+		.top-block {
+			line-height: 22px;
+			top: 110px;
+		}
+		.top-block h1 {
+			font-size: 20pt;
+		}
+		.content {
+			display: block;
+		}
+		:root{
+			--content-height: auto;
+		}
+		.geometry {
+			display: none;
+		}
+
+
 	}
-	:root{
-		--content-height: auto;
+	/*EXTRA-NARROW SCREEN*/
+	@media (max-width: 539px) {
+		/*header*/
+		.top-img {
+			height: 157px;
+			background-image: url(../img/banner-xs.png) no-repeat;
+		}
+		/*main*/
+		.top-block {
+			line-height: 20px;
+			top: 100px;
+		}
+		.top-block h1 {
+			font-size: 16pt;
+		}
+		.content {
+			display: block;
+		}
+		:root{
+			--content-height: auto;
+		}
+		.geometry {
+			display: none;
+		}
 	}
-	.geometry {
-		display: none;
-	}
-}
