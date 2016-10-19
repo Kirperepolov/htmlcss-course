@@ -28,7 +28,7 @@ body {
 header {
 	background-color: #000;
 	max-width: 1366px;
-	height: 67px;
+	height: auto;
 }
 /*Clearfix*/
 header:after,
@@ -55,7 +55,7 @@ footer:after {
 }
 .main-menu li {
 	width: auto;
-	margin-right: 5%;
+	margin-right: auto;
 	line-height: 67px;
 	text-transform: uppercase;
 	float: none;
@@ -63,11 +63,13 @@ footer:after {
 }
 .navbar-default .navbar-nav>li>a {
 	color:#fff;
+	padding: 10px 12px;
 }
 .navbar-collapse {
 	padding: 0;
 }
-.main-menu li:hover{
+.main-menu li:hover,
+.navbar-default .navbar-nav>li>a:hover{
 	color: #ca0500;
 }
 a {
@@ -83,21 +85,26 @@ a {
 .navbar-nav {
 	float: none;
 }
+/*HEADER END*/
+
+/*MAIN START*/
 .top-img {
 	font-size: 15pt;
-	background: url(../img/banner-lg.png) no-repeat;
-	background-size: 100% auto;
-	opacity: 0.6;
+	background: url(../img/banner-lg.png) no-repeat;/*
+	background-size: 100% auto;*/
+	/*opacity: 0.6;*/
 	max-width: 1366px;
 	height: 570px;
 	position: relative;
 }
 .shadow {
-	background-color: #000;
-	opacity: 0.3;
-	position: absolute;
 	width: 100%;
 	height: 100%;
+	background-color: #000;
+	opacity: 0.4;
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 .top-block {
 	color: #fff;
@@ -191,6 +198,8 @@ hr {
 	font-size: 16pt !important;
 	padding-top: 25px;
 }
+
+/*FOOTER START*/
 footer {
 	position: relative;
 	/*top: -150px;*/
@@ -202,8 +211,10 @@ footer {
 	line-height: 30px;
 	height: 230px
 }
-.footBlocks li:hover {
+.footBlocks li a:focus, 
+.footBlocks li a:hover {
 	color: #fff;
+	text-decoration: none;
 }
 /*.socials .footBlocks {
 	width: 80%;
@@ -221,13 +232,16 @@ footer {
 		list-style: none;
 		color: #999999;
 	}
+	.footBlocks a {
+		display: inline-block;
+	}
 	.copyright {
 		margin-top: 2em;
 		color: #585858;
 		padding-top: 	10px;
 		clear: both;
 	}
-	.fb, .tw,.go {
+	#fb, #tw,#go {
 		height: 	40px;
 		width: 	40px;
 		border-radius: 20px;
@@ -236,21 +250,22 @@ footer {
 		margin: 15px 15px 0 0;
 		background-image: url(../img/socials.png);
 	}
-	.tw:hover {
+	#tw:hover {
 		background-position: 0 -40px;
 	}
-	.fb {
+	#go {
 		background-position: 40px 0;
 	}
-	.go {
+	#fb {
 		background-position: 80px 0;
 	}
-	.fb:hover {
+	#go:hover {
 		background-position: 40px -40px;
 	}
-	.go:hover {
+	#fb:hover {
 		background-position: 80px -40px;
 	}
+	/*FOOTER END*/
 
 	/*Some responsivenes*/
 	/*EXTRA WIDE*/
@@ -264,7 +279,7 @@ footer {
 		/*header*/
 		.top-img {
 			height: 414px;
-			background-image: url(../img/banner-xxs.png) no-repeat;
+			background-size: 100% auto;
 		}
 		/*main*/
 		.main-menu li {
@@ -272,6 +287,7 @@ footer {
 		}
 		.top-block {
 			line-height: 40px;
+			top: 80px;
 		}
 		.top-block h1 {
 			font-size: 38pt;
@@ -283,17 +299,19 @@ footer {
 		/*header*/
 		.top-img {
 			height: 320px;
-			background-image: url(../img/banner-lg.png) no-repeat;
+			background: url(../img/banner-lg.png) no-repeat;
+			background-size: 100% auto;
 		}
 		.logo {
 			padding-left: 100px;
 		}
 		.main-menu li {
 			display: inline-block;
+			font-size: 11pt;
 		}
 		.top-block {
 			line-height: 32px;
-			top: 150px;
+			top: 80px;
 		}
 		.top-block h1 {
 			font-size: 28pt;
@@ -305,7 +323,8 @@ footer {
 		/*header*/
 		.top-img {
 			height: 225px;
-			background-image: url(../img/banner-md.png) no-repeat;
+			background: url(../img/banner-sm.png) no-repeat;
+			background-size: 100% auto;
 		}
 		.logo {
 			padding-left: 50px;
@@ -313,7 +332,7 @@ footer {
 		/*main*/
 		.top-block {
 			line-height: 22px;
-			top: 110px;
+			top: 25px;
 		}
 		.top-block h1 {
 			font-size: 20pt;
@@ -335,12 +354,13 @@ footer {
 		/*header*/
 		.top-img {
 			height: 157px;
-			background-image: url(../img/banner-xs.png) no-repeat;
+			background: url(../img/banner-xs.png) no-repeat;
+			background-size: 100% auto;
 		}
 		/*main*/
 		.top-block {
 			line-height: 20px;
-			top: 100px;
+			top: 0px;
 		}
 		.top-block h1 {
 			font-size: 16pt;
