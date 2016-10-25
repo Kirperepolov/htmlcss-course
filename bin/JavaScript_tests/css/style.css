@@ -1,9 +1,15 @@
 .raw {
 	position: relative;
 }
+.raw div,
+input {
+	position: relative;
+	margin: 10px;
+	padding: 5px;
+}
 .square {
 	border: 1px solid #000;
 	height: 100px;
-	width: 100px;
+	width: 300px;
 	position: absolute;
 }
