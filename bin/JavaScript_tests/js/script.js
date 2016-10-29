@@ -20,3 +20,14 @@ $("#block1").off("mouseup", drugAndDrop);
 	*		};
 	*		$("#block1").text(getDecimal(inputNumber));
 	*/
+
+	document.getElementById("random").addEventListener("click", function(){
+		var num1 = +document.getElementById('input1').value;
+		var num2 = +document.getElementById('input2').value;
+		minMax(num1,num2);
+	});
+
+	document.getElementById("upFirstLetter").addEventListener("click", function(){
+		var str = document.getElementById('input1').value;
+		document.getElementById('output').innerHTML = ucFirst(str);
+	});
