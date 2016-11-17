@@ -1,0 +1,64 @@
+body {
+  color: #00004d;
+  font-weight: bolder;
+  text-align: center;
+}
+.container{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+#actionStart {
+  width: 100px;
+  height: 40px;
+  margin: 100px auto 10px;
+  line-height: 38px;
+  align-self: auto;
+}
+.battle-field {
+  border: 1px solid #000;
+  box-sizing: content-box;
+  width: 420px;
+  height: 418px;
+  background-color: #ddd;
+  margin: 20px auto;
+  padding: 2px 0;
+}
+.block {
+  border: 1px solid #007399;
+  border-radius: 5px;
+  box-shadow: 1px 1px 10px #007399;
+  box-sizing: border-box;
+  width: 100px;
+  height: 100px;
+  background-color: #ccf2ff;
+  margin: 2px;
+  line-height: 98px;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 2em;
+  font-family: sans-serif;
+}
+#emptyBlock {
+  border-color: transparent;
+  opacity: 0;
+}
+.statistics {
+  border: 1px solid #000;
+  box-sizing: content-box;
+  width: 416px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #ddd;
+  height: 40px;
+  margin: 10px auto;
+  line-height: 38px;
+}
+.statistics div {
+  width:50%;
+}
+.statistics :last-child {
+  border-left: 1px solid #333;
+}
