@@ -221,7 +221,7 @@ function blockGame(){
   } else if (this.previousElementSibling === emptyBlock) {
     gameField.insertBefore(this,emptyBlock);
     steps++;
-  } else if (index<12) {
+  } else if (index<=12) {
     var i=0;
     while (i<4) {nodeIterator.nextNode(); i++};
     if (nodeIterator.referenceNode === emptyBlock) {
