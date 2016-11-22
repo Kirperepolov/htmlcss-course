@@ -11,7 +11,7 @@
 // charInfo.id='charInfo';
 
 
-var API = 'http://swapi.co/api/';
+var API = 'https://swapi.co/api/';
 var planet = 'planets/1/';
 var person = 'people/1/';
 var movie = 'films/4/';
