@@ -1,10 +1,7 @@
 /*setting the fonts*/
 @font-face {
-  font-family: 'Starjedi';
-    src: url('../fonts/Starjedi.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/Starjedi.woff') format('woff'),
-    url('../fonts/Starjedi.ttf')  format('truetype'),
-    url('../fonts/Starjedi.svg#Fiesta') format('svg');
+  font-family: 'SFDistantGalaxy';
+    src: url('../fonts/SFDistantGalaxyAlternate.ttf')  format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -14,12 +11,12 @@ body {
 }
 h1, h2 {
   color: #fff;
-  font-family: Starjedi, Verdana;
+  font-family: SFDistantGalaxy, Verdana;
 }
 h3 {
   margin-top: 0px;
   color: #00004d;
-  font-family: Starjedi, Verdana;
+  font-family: SFDistantGalaxy, Verdana;
 }
 /*
  *  MAIN
@@ -29,7 +26,9 @@ h3 {
   border: 3px solid #9da5af;
   border-radius: 3px;
   margin: 3px auto;
-  max-width: 1200px;
+}
+.pointer:hover{
+  cursor: pointer;
 }
 #charHeader {
   width: 100%;
@@ -78,7 +77,7 @@ h3 {
   flex-direction: column;
 }
 #charPic{
-  margin: 10px auto;
+  margin: 10px auto 20px;
   border-radius: 5px;
 }
 .infoBlock .navButtons {
@@ -88,16 +87,21 @@ h3 {
   -webkit-flex-wrap: nowrap;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
-  border: 1px solid #9da5af;
-  border-radius: 15px;
-  width: 50%;
   margin: 0 auto;
+}
+#navButtonBack{
+  border-radius: 15px 0 0 15px;
+  border: 1px solid #9da5af;
+}
+#navButtonForw{
+  border-radius: 0 15px 15px 0;
+  border: 1px solid #9da5af;
 }
 .navButtons div {
   flex-grow: 1;
   box-sizing:border-box;
   margin: 0px;
-  width: 50%;
+  padding: 0 10px;
 }
 .navButtons div:hover {
   cursor: pointer;
