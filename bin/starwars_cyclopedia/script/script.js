@@ -1,10 +1,8 @@
 // the start preload
   var API = 'https://swapi.co/api/';
-  // var planet = 'planets/1/';
   var person = 'people/1/';
-  // var movie = 'films/4/';
   var path = API+person;
-  // loadData(path);
+
 document.querySelector('h1').addEventListener('click',function(){
   mainPage(pathList);
 });
