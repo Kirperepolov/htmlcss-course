@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+  <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <title>SENNHEISER</title>
+</head>
+<body ng-app="PordCard">
+  <header><!-- Nothing yet --></header>
+
+  <main>
+    <div class="product" ng-controller="ProdCardController as ctrl">
+      <div class="product-image">
+        <div class="vendor">Sennheiser</div>
+        <div class="image-slider"></div>
+      </div>
+      <div class="product-description">
+        <a href="#" class="spec"><span class="ion-ios-gear">SPEC</span></a>
+        <div class="product-content">
+          <span class="model-id">Model: {{ctrl.product.id}}</span>
+          <h3>{{ctrl.product.title}}</h3>
+          <div class="annotation">{{ctrl.product.annotation}}</div>
+          <div class="description">{{ctrl.product.description}}</div>
+        </div>
+        <div class="rating">
+
+        </div>
+        <div>
+          <div class="price"></div>
+          <div class="color"></div>
+        </div>
+        <div class="buy-block">
+          <div class="quantity">
+            Quantity
+            <input type="text" ng-model="ctrl.quatity">
+            <div class="quant_arrows">
+              <div class="ion-chevron-up" ng-click="ctrl.more()"></div>
+              <div class="ion-chevron-down" ng-click="ctrl.less()"></div>
+            </div>
+          </div>
+          <div class="add" ng-click="ctrl.addToChart()">Add to Cart</div>
+        </div>
+        <div><button ng-click="ctrl.find()">SEARCH</button></div>
+      </div>
+    </div>
+  </main>
+
+  <footer><!-- nothing yet --></footer>
+  <script src="script/angular.min.js" charset="utf-8"></script>
+  <script src="script/app.js" charset="utf-8"></script>
+</body>
+</html>
