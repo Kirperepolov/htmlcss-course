@@ -1,2 +1,77 @@
+@font-face {
+  font-family: TilliniumWeb;
+  src: url(../fonts/TitilliumWeb-Regular.ttf);
+}
 
-/*# sourceMappingURL=data:application/json;base64,ewoJInZlcnNpb24iOiAzLAoJImZpbGUiOiAic3R5bGUuY3NzIiwKCSJzb3VyY2VzIjogWwoJCSIuLi9zYXNzL3N0eWxlLnNhc3MiCgldLAoJIm5hbWVzIjogW10sCgkibWFwcGluZ3MiOiAiIgp9 */
+@font-face {
+  font-family: TilliniumWebSemiBold;
+  src: url(../fonts/TitilliumWeb-SemiBold.ttf);
+}
+
+/* line 9, G:/Develop/htmlcss-course/bin/prod_card/sass/style.scss */
+.product {
+  margin-left: auto;
+  margin-right: auto;
+  width: 640px;
+}
+
+/* line 14, G:/Develop/htmlcss-course/bin/prod_card/sass/style.scss */
+.spec {
+  float: right;
+  color: #536dfe;
+  font-family: TilliniumWebSemiBold;
+  font-size: 13pt;
+}
+
+/* line 20, G:/Develop/htmlcss-course/bin/prod_card/sass/style.scss */
+.product-description {
+  width: 50%;
+  font-family: TilliniumWeb, Arial;
+  color: #263238;
+}
+
+/* line 24, G:/Develop/htmlcss-course/bin/prod_card/sass/style.scss */
+.product-description .model-id {
+  font-size: 12pt;
+}
+
+/* line 27, G:/Develop/htmlcss-course/bin/prod_card/sass/style.scss */
+.product-description h3 {
+  font-size: 29pt;
+}
+
+/* line 32, G:/Develop/htmlcss-course/bin/prod_card/sass/style.scss */
+.buy-block, .buy-block .quantity {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+/* line 37, G:/Develop/htmlcss-course/bin/prod_card/sass/style.scss */
+.buy-block {
+  font-family: TilliniumWeb, Arial;
+  color: #37474f;
+  font-size: 13pt;
+}
+
+/* line 45, G:/Develop/htmlcss-course/bin/prod_card/sass/style.scss */
+.buy-block input {
+  height: 45px;
+  width: 52px;
+  border: 1px solid #ddd;
+  margin-left: 11px;
+  margin-right: 11px;
+}
+
+/* line 52, G:/Develop/htmlcss-course/bin/prod_card/sass/style.scss */
+.buy-block .add {
+  font-family: TilliniumWeb, Arial;
+  font-size: 17pt;
+  color: #fff;
+  background: #536dfe;
+  height: 46px;
+  width: 147px;
+  text-align: center;
+}
+
+/*# sourceMappingURL=data:application/json;base64,ewoJInZlcnNpb24iOiAzLAoJImZpbGUiOiAic3R5bGUuY3NzIiwKCSJzb3VyY2VzIjogWwoJCSIuLi9zYXNzL3N0eWxlLnNjc3MiCgldLAoJIm5hbWVzIjogW10sCgkibWFwcGluZ3MiOiAiQUFBQSxVQUFVO0VBQ1QsV0FBVyxFQUFFLFlBQVk7RUFDekIsR0FBRyxFQUFFLHNDQUFzQzs7O0FBRTVDLFVBQVU7RUFDVCxXQUFXLEVBQUUsb0JBQW9CO0VBQ2pDLEdBQUcsRUFBRSx1Q0FBdUM7Ozs7QUFFN0MsQUFBQSxRQUFRLENBQUE7RUFDTixXQUFXLEVBQUUsSUFBSTtFQUNqQixZQUFZLEVBQUUsSUFBSTtFQUNsQixLQUFLLEVBQUUsS0FBSztDQUNiOzs7QUFDRCxBQUFBLEtBQUssQ0FBQTtFQUNILEtBQUssRUFBRSxLQUFLO0VBQ1osS0FBSyxFQUFFLE9BQU87RUFDZCxXQUFXLEVBQUUsb0JBQW9CO0VBQ2pDLFNBQVMsRUFBRSxJQUFJO0NBQ2hCOzs7QUFDRCxBQUFBLG9CQUFvQixDQUFBO0VBQ2xCLEtBQUssRUFBQyxHQUFHO0VBQ1QsV0FBVyxFQUFFLG1CQUFtQjtFQUNoQyxLQUFLLEVBQUUsT0FBTztDQVFmOzs7QUFYRCxBQUlFLG9CQUprQixDQUlsQixTQUFTLENBQUE7RUFDUCxTQUFTLEVBQUUsSUFBSTtDQUNoQjs7O0FBTkgsQUFPRSxvQkFQa0IsQ0FPbEIsRUFBRSxDQUFBO0VBQ0EsU0FBUyxFQUFFLElBQUk7Q0FDaEI7OztBQVFILEFBTEEsVUFLVSxFQUFWLEFBTEEsVUFLVSxDQUtSLFNBQVMsQ0FWRjtFQUNQLE9BQU8sRUFBRSxJQUFJO0VBQ2IsU0FBUyxFQUFFLE1BQU07RUFDakIsZUFBZSxFQUFFLGFBQWE7Q0FDL0I7OztBQUNELEFBQUEsVUFBVSxDQUFBO0VBRVIsV0FBVyxFQUFFLG1CQUFtQjtFQUNoQyxLQUFLLEVBQUUsT0FBTztFQUNkLFNBQVMsRUFBRSxJQUFJO0NBb0JoQjs7O0FBeEJELEFBUUUsVUFSUSxDQVFSLEtBQUssQ0FBQTtFQUNILE1BQU0sRUFBRSxJQUFJO0VBQ1osS0FBSyxFQUFFLElBQUk7RUFDWCxNQUFNLEVBQUUsY0FBYztFQUN0QixXQUFXLEVBQUUsSUFBSTtFQUNqQixZQUFZLEVBQUUsSUFBSTtDQUNuQjs7O0FBZEgsQUFlRSxVQWZRLENBZVIsSUFBSSxDQUFBO0VBQ0YsV0FBVyxFQUFFLG1CQUFtQjtFQUNoQyxTQUFTLEVBQUUsSUFBSTtFQUNmLEtBQUssRUFBQyxJQUFJO0VBQ1YsVUFBVSxFQUFFLE9BQU87RUFDbkIsTUFBTSxFQUFFLElBQUk7RUFDWixLQUFLLEVBQUMsS0FBSztFQUNYLFVBQVUsRUFBRSxNQUFNO0NBQ25CIgp9 */

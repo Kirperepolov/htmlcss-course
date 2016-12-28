@@ -9,6 +9,7 @@
   function ProdCardController(GetProdService){
     var ctrl = this;
     ctrl.product;
+    ctrl.quantity = 1;
 
     ctrl.find = function(searchItem){
       if (typeof(searchItem) !== 'number') {
@@ -19,7 +20,16 @@
         foundPromise.then(function(obj){
           ctrl.product=obj;
         }).catch(error=>console.log(error.message));
+    };
+    ctrl.find();
 
+    ctrl.more = function(){
+      ctrl.quantity += 1;
+    };
+    ctrl.less = function(){
+      if (ctrl.quantity>1){
+        ctrl.quantity -= 1;
+      };
     };
 
   };
@@ -37,9 +47,9 @@
         let prodList = result.data.product_items;
 
         for (let i=0;i<prodList.length;i++){
-          if (prodList[i].id.includes(searchId)){
+          // if (prodList[i].id.includes(searchId)){
             service.product = prodList[i];
-          };
+          // };
         };
 
         return service.product;

@@ -1,0 +1,61 @@
+@font-face {
+	font-family: TilliniumWeb;
+	src: url(../fonts/TitilliumWeb-Regular.ttf);
+}
+@font-face {
+	font-family: TilliniumWebSemiBold;
+	src: url(../fonts/TitilliumWeb-SemiBold.ttf);
+}
+.product{
+  margin-left: auto;
+  margin-right: auto;
+  width: 640px;
+}
+.spec{
+  float: right;
+  color: #536dfe;
+  font-family: TilliniumWebSemiBold;
+  font-size: 13pt;
+}
+.product-description{
+  width:50%;
+  font-family: TilliniumWeb, Arial;
+  color: #263238;
+  .model-id{
+    font-size: 12pt;
+  }
+  h3{
+    font-size: 29pt;
+  }
+
+}
+%flex-box{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.buy-block{
+  @extend %flex-box;
+  font-family: TilliniumWeb, Arial;
+  color: #37474f;
+  font-size: 13pt;
+  .quantity{
+    @extend %flex-box;
+  }
+  input{
+    height: 45px;
+    width: 52px;
+    border: 1px solid #ddd;
+    margin-left: 11px;
+    margin-right: 11px;
+  }
+  .add{
+    font-family: TilliniumWeb, Arial;
+    font-size: 17pt;
+    color:#fff;
+    background: #536dfe;
+    height: 46px;
+    width:147px;
+    text-align: center;
+  }
+}
