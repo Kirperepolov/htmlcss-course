@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
   <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="styles/style.css">
   <title>SENNHEISER</title>
 </head>
@@ -15,19 +16,37 @@
   <main>
     <div class="product" ng-controller="ProdCardController as ctrl">
       <div class="product-image">
-        <div class="vendor">Sennheiser</div>
-        <div class="image-slider"></div>
+        <img src="images/Brand_logo.png" alt="Sennheiser">
+        <img id="prod-image" src="images/Product_Image.png" alt="{{ctrl.product.title}} {{ctrl.product.titleoption}}">
+        <div class="swipe">
+          <span class="ion-chevron-left"></span>
+          <span class="fa fa-hand-rock-o" aria-hidden="true"></span>
+          <span class="ion-chevron-right"></span>
+        </div>
+        <div class="slider">
+          <span class="active"></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
       <div class="product-description">
         <a href="#" class="spec"><span class="ion-ios-gear">SPEC</span></a>
         <div class="product-content">
           <span class="model-id">Model: {{ctrl.product.id}}</span>
           <h3>{{ctrl.product.title}}</h3>
+          <div class="title-option">{{ctrl.product.titleoption}}</div>
           <div class="annotation">{{ctrl.product.annotation}}</div>
           <div class="description">{{ctrl.product.description}}</div>
         </div>
         <div class="rating">
-
+          <span>&#9734;</span>
+          <span>&#9734;</span>
+          <span>&#9734;</span>
+          <span>&#9734;</span>
+          <span>&#9734;</span>
+          <span class="rating-index">{{ctrl.product.rating}}</span><span class="reviews">({{ctrl.product.reviews}} reviews)</span>
         </div>
         <div>
           <div class="price"></div>
