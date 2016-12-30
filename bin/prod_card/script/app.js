@@ -4,12 +4,30 @@
   angular.module('PordCard',[])
   .controller('ProdCardController',ProdCardController)
   .service('GetProdService',GetProdService)
+  .directive('imageSlider',ImageSliderDirective)
+
+  function ImageSliderDirective(){
+    let ddo = {
+      templateUrl: 'snippets/slides_directive.html',
+      scope: {
+        product: '<',
+        imageIndex: '<'
+      },
+      // controller: 'FoundItemsDirectiveController as itemsCtrl',
+      // bindToController: true,
+      restrict:'E'
+    };
+
+    return ddo;
+  };
 
   ProdCardController.$inject=['GetProdService'];
   function ProdCardController(GetProdService){
     var ctrl = this;
     ctrl.product;
     ctrl.quantity = 1;
+    ctrl.imageIndex = [];
+    ctrl.activeSlide = 1;
 
     ctrl.find = function(searchItem){
       if (typeof(searchItem) !== 'number') {
@@ -19,9 +37,17 @@
         var foundPromise = GetProdService.getProduct(searchItem);
         foundPromise.then(function(obj){
           ctrl.product=obj;
+          for (let i=0;i<ctrl.product.images;i++){
+            ctrl.imageIndex.push(i);
+          };
         }).catch(error=>console.log(error.message));
     };
     ctrl.find();
+    
+    if(ctrl.product){
+      var activeSliderBar = document.querySelector('.slider-control');
+      activeSliderBar.children[ctrl.activeSlide].className='active';
+    }
 
     ctrl.more = function(){
       ctrl.quantity += 1;

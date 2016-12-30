@@ -1,8 +1,10 @@
 {"product_items" : [{
   "id":505795,
   "title":"Momentum®",
+  "model":"Momentum",
   "titleoption": "Wireless Black",
   "color": "black",
+  "images":3,
   "annotation": "Wireless headphones with integrated microphone",
   "description": "Peak performance with active noise cancelation. Sennheiser's new MOMENTUM Wireless - Closed circumaural headphone featuring Bluetooth&reg wireless technology and NoiseGard Hybrid active noise cancelation",
   "rating": 4.25,
