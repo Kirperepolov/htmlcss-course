@@ -9,6 +9,10 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="styles/style.css">
   <title>SENNHEISER</title>
+
+  <!-- SCRIPTS -->
+  <script src="script/angular.min.js" charset="utf-8"></script>
+  <script src="script/app.js" charset="utf-8"></script>
 </head>
 <body ng-app="PordCard">
   <header><!-- Nothing yet --></header>
@@ -17,18 +21,18 @@
     <div class="product" ng-controller="ProdCardController as ctrl">
       <div class="product-image">
         <img src="images/Brand_logo.png" alt="Sennheiser">
-        <img id="prod-image" src="images/Product_Image.png" alt="{{ctrl.product.title}} {{ctrl.product.titleoption}}">
+        <ul id="slider">
+          <image-slider product="ctrl.product" image-index="ctrl.imageIndex">
+
+        </image-slider>
+        </ul>
         <div class="swipe">
           <span class="ion-chevron-left"></span>
           <span class="fa fa-hand-rock-o" aria-hidden="true"></span>
           <span class="ion-chevron-right"></span>
         </div>
-        <div class="slider">
-          <span class="active"></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
+        <div class="slider-control">
+          <span ng-repeat="index in ctrl.imageIndex"></span>
         </div>
       </div>
       <div class="product-description">
@@ -68,7 +72,5 @@
   </main>
 
   <footer><!-- nothing yet --></footer>
-  <script src="script/angular.min.js" charset="utf-8"></script>
-  <script src="script/app.js" charset="utf-8"></script>
 </body>
 </html>
