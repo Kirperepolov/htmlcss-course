@@ -93,7 +93,7 @@
     service.product ={};
 
     service.getProduct = function(color){
-      let path = '../json/product.json';
+      let path = 'json/product.json';
 
       return $http.get(path)    //a shortcut method fot GET requests
       .then(function (result) {
