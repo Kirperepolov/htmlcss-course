@@ -11,9 +11,10 @@
       templateUrl: 'snippets/slides_directive.html',
       scope: {
         product: '<',
-        imageIndex: '<'
+        imageIndex: '<',
+        activeSlide: '<'
       },
-      // controller: 'FoundItemsDirectiveController as itemsCtrl',
+      // controller: 'ImageSliderDirectiveController as sliderCtrl',
       // bindToController: true,
       restrict:'E'
     };
@@ -25,29 +26,26 @@
   function ProdCardController(GetProdService){
     var ctrl = this;
     ctrl.product;
-    ctrl.quantity = 1;
-    ctrl.imageIndex = [];
-    ctrl.activeSlide = 1;
+    ctrl.cart;
 
-    ctrl.find = function(searchItem){
-      if (typeof(searchItem) !== 'number') {
-        searchItem = 505795;
+    ctrl.find = function(color){
+      if (!color) {
+        color = "black";
       };
 
-        var foundPromise = GetProdService.getProduct(searchItem);
-        foundPromise.then(function(obj){
-          ctrl.product=obj;
-          for (let i=0;i<ctrl.product.images;i++){
-            ctrl.imageIndex.push(i);
-          };
-        }).catch(error=>console.log(error.message));
+      var foundPromise = GetProdService.getProduct(color);
+      foundPromise.then(function(obj){
+        ctrl.product=obj;
+        ctrl.imageIndex = [];
+        for (let i=0;i<ctrl.product.images;i++){
+          ctrl.imageIndex.push(i);
+        };
+        ctrl.quantity = 1;
+        ctrl.activeSlide = 0;
+      }).catch(error=>console.log(error.message));
     };
     ctrl.find();
-    
-    if(ctrl.product){
-      var activeSliderBar = document.querySelector('.slider-control');
-      activeSliderBar.children[ctrl.activeSlide].className='active';
-    }
+
 
     ctrl.more = function(){
       ctrl.quantity += 1;
@@ -58,14 +56,43 @@
       };
     };
 
+    ctrl.activeSlideClass = function(index){
+      if (ctrl.activeSlide===index){
+        return "active";
+      };
+    };
+    ctrl.changeSlide = function(id){
+      ctrl.activeSlide = id;
+    }
+
+    ctrl.prevSlide = function(){
+      var thisSlide = ctrl.activeSlide;
+      ctrl.activeSlide = (thisSlide-1)%ctrl.product.images;
+    };
+
+    ctrl.nextSlide = function(){
+      var thisSlide = ctrl.activeSlide;
+      ctrl.activeSlide = (thisSlide+1)%ctrl.product.images;
+    };
+
+    ctrl.addToChart = function(){
+      if (!ctrl.cart) {ctrl.cart = []};
+      var addedItem = {
+        productId: ctrl.product.id,
+        quantity: ctrl.quantity
+      };
+      ctrl.cart.push(addedItem);
+      console.log(ctrl.cart);
+    };
   };
+
 
   GetProdService.$inject = ['$http'];
   function GetProdService($http){
     var service = this;
     service.product ={};
 
-    service.getProduct = function(searchId){
+    service.getProduct = function(color){
       let path = '../json/product.json';
 
       return $http.get(path)    //a shortcut method fot GET requests
@@ -73,9 +100,12 @@
         let prodList = result.data.product_items;
 
         for (let i=0;i<prodList.length;i++){
-          // if (prodList[i].id.includes(searchId)){
+          if (prodList[i].color.includes(color)){
             service.product = prodList[i];
-          // };
+            return service.product;
+          } else {
+            service.product = "Nothing found";
+          };
         };
 
         return service.product;

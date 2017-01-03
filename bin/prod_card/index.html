@@ -20,19 +20,19 @@
   <main>
     <div class="product" ng-controller="ProdCardController as ctrl">
       <div class="product-image">
-        <img src="images/Brand_logo.png" alt="Sennheiser">
-        <ul id="slider">
-          <image-slider product="ctrl.product" image-index="ctrl.imageIndex">
-
-        </image-slider>
-        </ul>
+        <img ng-src="images/{{ctrl.product.brand}}.png" alt="{{ctrl.product.brand}}">
+        <div class="prod-image">
+          <image-slider product="ctrl.product" image-index="ctrl.imageIndex" active-slide="ctrl.activeSlide">
+          </image-slider>
+        </div>
         <div class="swipe">
-          <span class="ion-chevron-left"></span>
+          <span class="ion-chevron-left" ng-click = "ctrl.prevSlide()"></span>
           <span class="fa fa-hand-rock-o" aria-hidden="true"></span>
-          <span class="ion-chevron-right"></span>
+          <span class="ion-chevron-right" ng-click = "ctrl.nextSlide()"></span>
         </div>
         <div class="slider-control">
-          <span ng-repeat="index in ctrl.imageIndex"></span>
+          <span ng-repeat="index in ctrl.imageIndex" ng-class="
+          ctrl.activeSlideClass($index)" ng-click="ctrl.changeSlide($index)"</span>
         </div>
       </div>
       <div class="product-description">
@@ -52,13 +52,22 @@
           <span>&#9734;</span>
           <span class="rating-index">{{ctrl.product.rating}}</span><span class="reviews">({{ctrl.product.reviews}} reviews)</span>
         </div>
-        <div>
-          <div class="price"></div>
-          <div class="color"></div>
+        <div class="options">
+          <div>
+            <span class="price">${{ctrl.product.price}}</span><br>
+            <span class="price-option">Shipping and taxes extra</span>
+          </div>
+          <div class="color">
+            <span>Choose your colors:</span><br>
+            <div class="color-options">
+              <div class="option black" ng-class="(ctrl.product.color==='black')?'active-color':''" ng-click="ctrl.find('black')"></div>
+              <div class="option white" ng-class="(ctrl.product.color==='white')?'active-color':''" ng-click="ctrl.find('white')"></div>
+            </div>
+          </div>
         </div>
         <div class="buy-block">
           <div class="quantity">
-            Quantity
+            <span>Quantity</span>
             <input type="textarea" ng-model="ctrl.quantity">
             <div class="quant_arrows">
               <div class="ion-chevron-up" ng-click="ctrl.more()"></div>
