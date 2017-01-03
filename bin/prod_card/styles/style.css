@@ -9,7 +9,7 @@
 }
 
 /* line 9, G:/Develop/htmlcss-course/bin/prod_card/sass/style.scss */
-.product, .product-description .options, .product-description .options .color .color-options, .buy-block, .buy-block .quantity {
+.product, .product-image .slider-control, .product-description .options, .product-description .options .color .color-options, .buy-block, .buy-block .quantity {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
@@ -33,42 +33,42 @@ body {
   position: relative;
 }
 
-/* line 29, G:/Develop/htmlcss-course/bin/prod_card/sass/style.scss */
-.product .product-image {
+/* line 30, G:/Develop/htmlcss-course/bin/prod_card/sass/style.scss */
+.product-image {
   width: 50%;
 }
 
-/* line 31, G:/Develop/htmlcss-course/bin/prod_card/sass/style.scss */
-.product .product-image .prod-image {
+/* line 32, G:/Develop/htmlcss-course/bin/prod_card/sass/style.scss */
+.product-image .prod-image {
   margin: 37px 71px 0;
 }
 
 /* line 35, G:/Develop/htmlcss-course/bin/prod_card/sass/style.scss */
-.product .product-image .swipe {
+.product-image .swipe {
   width: 78px;
   margin-left: auto;
   margin-right: auto;
   color: #263238;
 }
 
-/* line 43, G:/Develop/htmlcss-course/bin/prod_card/sass/style.scss */
-.product .product-image .swipe .fa.fa-hand-rock-o {
+/* line 40, G:/Develop/htmlcss-course/bin/prod_card/sass/style.scss */
+.product-image .swipe .fa.fa-hand-rock-o {
   margin: 0 20px;
 }
 
-/* line 46, G:/Develop/htmlcss-course/bin/prod_card/sass/style.scss */
-.product .product-image .swipe *:hover {
+/* line 43, G:/Develop/htmlcss-course/bin/prod_card/sass/style.scss */
+.product-image .swipe *:hover {
   cursor: pointer;
 }
 
-/* line 50, G:/Develop/htmlcss-course/bin/prod_card/sass/style.scss */
-.product .product-image .slider-control {
-  margin: 13px auto;
-  width: 70px;
+/* line 47, G:/Develop/htmlcss-course/bin/prod_card/sass/style.scss */
+.product-image .slider-control {
+  justify-content: center;
+  margin-top: 13px;
 }
 
-/* line 53, G:/Develop/htmlcss-course/bin/prod_card/sass/style.scss */
-.product .product-image .slider-control span {
+/* line 51, G:/Develop/htmlcss-course/bin/prod_card/sass/style.scss */
+.product-image .slider-control span {
   width: 18px;
   height: 3px;
   margin-right: 5px;
@@ -76,17 +76,17 @@ body {
   display: inline-block;
 }
 
-/* line 59, G:/Develop/htmlcss-course/bin/prod_card/sass/style.scss */
-.product .product-image .slider-control span.active {
+/* line 57, G:/Develop/htmlcss-course/bin/prod_card/sass/style.scss */
+.product-image .slider-control span.active {
   background-color: #536dfe;
 }
 
-/* line 62, G:/Develop/htmlcss-course/bin/prod_card/sass/style.scss */
-.product .product-image .slider-control span:hover {
+/* line 60, G:/Develop/htmlcss-course/bin/prod_card/sass/style.scss */
+.product-image .slider-control span:hover {
   cursor: pointer;
 }
 
-/* line 69, G:/Develop/htmlcss-course/bin/prod_card/sass/style.scss */
+/* line 66, G:/Develop/htmlcss-course/bin/prod_card/sass/style.scss */
 .spec {
   float: right;
   color: #536dfe;
@@ -94,7 +94,7 @@ body {
   font-size: 13px;
 }
 
-/* line 75, G:/Develop/htmlcss-course/bin/prod_card/sass/style.scss */
+/* line 72, G:/Develop/htmlcss-course/bin/prod_card/sass/style.scss */
 .product-description {
   width: 50%;
   font-family: TilliniumWeb, Arial;
@@ -102,112 +102,133 @@ body {
   padding: 50px 40px 46px 10px;
 }
 
-/* line 80, G:/Develop/htmlcss-course/bin/prod_card/sass/style.scss */
+/* line 77, G:/Develop/htmlcss-course/bin/prod_card/sass/style.scss */
 .product-description .model-id {
   font-size: 12px;
 }
 
-/* line 83, G:/Develop/htmlcss-course/bin/prod_card/sass/style.scss */
+/* line 80, G:/Develop/htmlcss-course/bin/prod_card/sass/style.scss */
 .product-description h3 {
   font-size: 29pt;
   margin: 21px 0 0;
 }
 
-/* line 87, G:/Develop/htmlcss-course/bin/prod_card/sass/style.scss */
+/* line 84, G:/Develop/htmlcss-course/bin/prod_card/sass/style.scss */
 .product-description .title-option {
   font-size: 24px;
 }
 
-/* line 90, G:/Develop/htmlcss-course/bin/prod_card/sass/style.scss */
+/* line 87, G:/Develop/htmlcss-course/bin/prod_card/sass/style.scss */
 .product-description .annotation {
   font-size: 17px;
   margin: 28px 0 30px;
 }
 
-/* line 99, G:/Develop/htmlcss-course/bin/prod_card/sass/style.scss */
+/* line 96, G:/Develop/htmlcss-course/bin/prod_card/sass/style.scss */
 .product-description .options span {
   font-family: TitilliumWeb, Arial;
   font-size: 12px;
   color: #37474f;
 }
 
-/* line 103, G:/Develop/htmlcss-course/bin/prod_card/sass/style.scss */
+/* line 100, G:/Develop/htmlcss-course/bin/prod_card/sass/style.scss */
 .product-description .options span.price-option {
   opacity: 0.5;
 }
 
-/* line 106, G:/Develop/htmlcss-course/bin/prod_card/sass/style.scss */
+/* line 103, G:/Develop/htmlcss-course/bin/prod_card/sass/style.scss */
 .product-description .options span.price {
   color: #f1425d;
   font-size: 26px;
   font-family: TilliniumWebSemiBold;
 }
 
-/* line 114, G:/Develop/htmlcss-course/bin/prod_card/sass/style.scss */
+/* line 110, G:/Develop/htmlcss-course/bin/prod_card/sass/style.scss */
 .product-description .options .color .color-options {
   justify-content: flex-end;
 }
 
-/* line 117, G:/Develop/htmlcss-course/bin/prod_card/sass/style.scss */
+/* line 113, G:/Develop/htmlcss-course/bin/prod_card/sass/style.scss */
 .product-description .options .color .color-options .option {
   border: 1px solid #fff;
-  border-radius: 10px;
+  border-radius: 50%;
   width: 21px;
   height: 21px;
   margin: 16px 11px 45px;
 }
 
-/* line 123, G:/Develop/htmlcss-course/bin/prod_card/sass/style.scss */
+/* line 119, G:/Develop/htmlcss-course/bin/prod_card/sass/style.scss */
 .product-description .options .color .color-options .option.black {
   background-color: #3c383a;
 }
 
-/* line 126, G:/Develop/htmlcss-course/bin/prod_card/sass/style.scss */
+/* line 122, G:/Develop/htmlcss-course/bin/prod_card/sass/style.scss */
 .product-description .options .color .color-options .option.white {
   background-color: #e8e6e3;
 }
 
-/* line 129, G:/Develop/htmlcss-course/bin/prod_card/sass/style.scss */
+/* line 125, G:/Develop/htmlcss-course/bin/prod_card/sass/style.scss */
 .product-description .options .color .color-options .option.active-color {
   box-shadow: 0 0 2px 2px #a9b6fe;
 }
 
-/* line 132, G:/Develop/htmlcss-course/bin/prod_card/sass/style.scss */
+/* line 128, G:/Develop/htmlcss-course/bin/prod_card/sass/style.scss */
 .product-description .options .color .color-options .option:hover {
   cursor: pointer;
 }
 
-/* line 139, G:/Develop/htmlcss-course/bin/prod_card/sass/style.scss */
+/* line 135, G:/Develop/htmlcss-course/bin/prod_card/sass/style.scss */
 .product-description .rating {
   margin: 20px 0;
 }
 
-/* line 141, G:/Develop/htmlcss-course/bin/prod_card/sass/style.scss */
+/* line 137, G:/Develop/htmlcss-course/bin/prod_card/sass/style.scss */
+.product-description .rating .stars {
+  color: #c9c9c9;
+  display: inline-block;
+}
+
+/* line 140, G:/Develop/htmlcss-course/bin/prod_card/sass/style.scss */
+.product-description .rating .stars *:hover {
+  cursor: pointer;
+}
+
+/* line 143, G:/Develop/htmlcss-course/bin/prod_card/sass/style.scss */
+.product-description .rating .stars .yellow-star {
+  color: #fccf47;
+}
+
+/* line 147, G:/Develop/htmlcss-course/bin/prod_card/sass/style.scss */
 .product-description .rating .rating-index {
   font-size: 15px;
   color: #f1425d;
   margin: 0 5px 0 30px;
 }
 
-/* line 146, G:/Develop/htmlcss-course/bin/prod_card/sass/style.scss */
+/* line 152, G:/Develop/htmlcss-course/bin/prod_card/sass/style.scss */
 .product-description .rating .reviews {
   color: #656c6f;
   font-size: 13px;
 }
 
-/* line 153, G:/Develop/htmlcss-course/bin/prod_card/sass/style.scss */
+/* line 159, G:/Develop/htmlcss-course/bin/prod_card/sass/style.scss */
 .buy-block {
   font-family: TilliniumWeb, Arial;
   color: #37474f;
   font-size: 13px;
 }
 
-/* line 160, G:/Develop/htmlcss-course/bin/prod_card/sass/style.scss */
+/* line 166, G:/Develop/htmlcss-course/bin/prod_card/sass/style.scss */
 .buy-block .quantity span {
   line-height: 46px;
 }
 
-/* line 164, G:/Develop/htmlcss-course/bin/prod_card/sass/style.scss */
+/* line 170, G:/Develop/htmlcss-course/bin/prod_card/sass/style.scss */
+.buy-block .quantity .quant_arrows *:hover {
+  cursor: pointer;
+}
+
+/* line 175, G:/Develop/htmlcss-course/bin/prod_card/sass/style.scss */
 .buy-block input {
   height: 45px;
   width: 52px;
@@ -217,7 +238,7 @@ body {
   text-align: center;
 }
 
-/* line 172, G:/Develop/htmlcss-course/bin/prod_card/sass/style.scss */
+/* line 183, G:/Develop/htmlcss-course/bin/prod_card/sass/style.scss */
 .buy-block .add {
   font-family: TilliniumWeb, Arial;
   font-size: 17px;
@@ -229,4 +250,14 @@ body {
   line-height: 46px;
 }
 
-/*# sourceMappingURL=data:application/json;base64,ewoJInZlcnNpb24iOiAzLAoJImZpbGUiOiAic3R5bGUuY3NzIiwKCSJzb3VyY2VzIjogWwoJCSIuLi9zYXNzL3N0eWxlLnNjc3MiCgldLAoJIm5hbWVzIjogW10sCgkibWFwcGluZ3MiOiAiQUFBQSxVQUFVO0VBQ1QsV0FBVyxFQUFFLFlBQVk7RUFDekIsR0FBRyxFQUFFLHNDQUFzQzs7O0FBRTVDLFVBQVU7RUFDVCxXQUFXLEVBQUUsb0JBQW9CO0VBQ2pDLEdBQUcsRUFBRSx1Q0FBdUM7Ozs7QUFZN0MsQUFWQSxRQVVRLEVBd0RSLEFBbEVBLG9CQWtFb0IsQ0FzQm5CLFFBQVEsRUF0QlQsQUFsRUEsb0JBa0VvQixDQXNCbkIsUUFBUSxDQWdCUCxNQUFNLENBQ0wsY0FBYyxFQXVDakIsQUFoSkEsVUFnSlUsRUFBVixBQWhKQSxVQWdKVSxDQUtULFNBQVMsQ0FySkQ7RUFDUixPQUFPLEVBQUUsSUFBSTtFQUNiLFNBQVMsRUFBRSxNQUFNO0VBQ2pCLGVBQWUsRUFBRSxhQUFhO0NBQzlCOzs7QUFFRCxBQUFBLElBQUksQ0FBQTtFQUNILFVBQVUsRUFBRSw4QkFBOEI7RUFDMUMsZ0JBQWdCLEVBQUUsbUNBQW1DO0NBQ3JEOzs7QUFDRCxBQUFBLFFBQVEsQ0FBQTtFQUVQLFdBQVcsRUFBRSxJQUFJO0VBQ2pCLFlBQVksRUFBRSxJQUFJO0VBQ2xCLEtBQUssRUFBRSxLQUFLO0VBQ1osTUFBTSxFQUFFLEtBQUs7RUFDYixVQUFVLEVBQUUsS0FBSztFQUNqQixnQkFBZ0IsRUFBRSxJQUFJO0VBQ3RCLFVBQVUsRUFBRSxDQUFDLENBQUMsSUFBSSxDQUFDLElBQUksQ0FBQyxrQkFBZTtFQUN2QyxRQUFRLEVBQUMsUUFBUTtDQXdDakI7OztBQWpERCxBQVVDLFFBVk8sQ0FVUCxjQUFjLENBQUE7RUFDYixLQUFLLEVBQUUsR0FBRztDQXFDVjs7O0FBaERGLEFBWUUsUUFaTSxDQVVQLGNBQWMsQ0FFYixXQUFXLENBQUE7RUFDVixNQUFNLEVBQUUsV0FBVztDQUVuQjs7O0FBZkgsQUFnQkUsUUFoQk0sQ0FVUCxjQUFj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 */
+/* line 192, G:/Develop/htmlcss-course/bin/prod_card/sass/style.scss */
+.buy-block .add:hover {
+  cursor: pointer;
+}
+
+/* line 195, G:/Develop/htmlcss-course/bin/prod_card/sass/style.scss */
+.buy-block .add:active {
+  font-size: 18px;
+}
+
+/*# sourceMappingURL=data:application/json;base64,ewoJInZlcnNpb24iOiAzLAoJImZpbGUiOiAic3R5bGUuY3NzIiwKCSJzb3VyY2VzIjogWwoJCSIuLi9zYXNzL3N0eWxlLnNjc3MiCgldLAoJIm5hbWVzIjogW10sCgkibWFwcGluZ3MiOiAiQUFBQSxVQUFVO0VBQ1QsV0FBVyxFQUFFLFlBQVk7RUFDekIsR0FBRyxFQUFFLHNDQUFzQzs7O0FBRTVDLFVBQVU7RUFDVCxXQUFXLEVBQUUsb0JBQW9CO0VBQ2pDLEdBQUcsRUFBRSx1Q0FBdUM7Ozs7QUFZN0MsQUFWQSxRQVVRLEVBV1IsQUFyQkEsY0FxQmMsQ0FpQmIsZUFBZSxFQXlCaEIsQUEvREEsb0JBK0RvQixDQXNCbkIsUUFBUSxFQXRCVCxBQS9EQSxvQkErRG9CLENBc0JuQixRQUFRLENBZVAsTUFBTSxDQUNMLGNBQWMsRUFpRGpCLEFBdEpBLFVBc0pVLEVBQVYsQUF0SkEsVUFzSlUsQ0FLVCxTQUFTLENBM0pEO0VBQ1IsT0FBTyxFQUFFLElBQUk7RUFDYixTQUFTLEVBQUUsTUFBTTtFQUNqQixlQUFlLEVBQUUsYUFBYTtDQUM5Qjs7O0FBRUQsQUFBQSxJQUFJLENBQUE7RUFDSCxVQUFVLEVBQUUsOEJBQThCO0VBQzFDLGdCQUFnQixFQUFFLG1DQUFtQztDQUNyRDs7O0FBQ0QsQUFBQSxRQUFRLENBQUE7RUFFUCxXQUFXLEVBQUUsSUFBSTtFQUNqQixZQUFZLEVBQUUsSUFBSTtFQUNsQixLQUFLLEVBQUUsS0FBSztFQUNaLE1BQU0sRUFBRSxLQUFLO0VBQ2IsVUFBVSxFQUFFLEtBQUs7RUFDakIsZ0JBQWdCLEVBQUUsSUFBSTtFQUN0QixVQUFVLEVBQUUsQ0FBQyxDQUFDLElBQUksQ0FBQyxJQUFJLENBQUMsa0JBQWU7RUFDdkMsUUFBUSxFQUFDLFFBQVE7Q0FDakI7OztBQUNELEFBQUEsY0FBYyxDQUFBO0VBQ2IsS0FBSyxFQUFFLEdBQUc7Q0FrQ1Y7OztBQW5DRCxBQUVDLGNBRmEsQ0FFYixXQUFXLENBQUE7RUFDVixNQUFNLEVBQUUsV0FBVztDQUNuQjs7O0FBSkYsQUFLQyxjQUxhLENBS2Is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 */
