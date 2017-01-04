@@ -1,0 +1,40 @@
+/* line 1, G:/Develop/htmlcss-course/bin/launchcircle/scss/style.scss */
+.horiz {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+}
+
+/* line 6, G:/Develop/htmlcss-course/bin/launchcircle/scss/style.scss */
+.vertical-line {
+  width: 0;
+  height: 480px;
+  margin: 0 auto;
+  border: 1px solid #000;
+  z-index: 1;
+}
+
+/* line 15, G:/Develop/htmlcss-course/bin/launchcircle/scss/style.scss */
+.horiz article {
+  border: 2px solid #2342dd;
+  width: 250px;
+}
+
+/* line 19, G:/Develop/htmlcss-course/bin/launchcircle/scss/style.scss */
+.horiz .cicle {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  border: 1px solid #c0c0c0;
+  z-index: 2;
+}
+
+/* line 26, G:/Develop/htmlcss-course/bin/launchcircle/scss/style.scss */
+.horiz h3 {
+  color: #2342dd;
+  font-weight: bold;
+  font-size: 14px;
+  width: 250px;
+}
+
+/*# sourceMappingURL=data:application/json;base64,ewoJInZlcnNpb24iOiAzLAoJImZpbGUiOiAic3R5bGUuY3NzIiwKCSJzb3VyY2VzIjogWwoJCSIuLi9zY3NzL3N0eWxlLnNjc3MiCgldLAoJIm5hbWVzIjogW10sCgkibWFwcGluZ3MiOiAiO0FBWUEsQUFaQSxNQVlNLENBWkc7RUFDUCxPQUFPLEVBQUUsSUFBSTtFQUNiLGVBQWUsRUFBRSxZQUFZO0VBQzdCLFNBQVMsRUFBRSxNQUFNO0NBQ2xCOzs7QUFDRCxBQUFBLGNBQWMsQ0FBQztFQUNiLEtBQUssRUFBRSxDQUFDO0VBQ1IsTUFBTSxFQUFFLEtBQUs7RUFDYixNQUFNLEVBQUUsTUFBTTtFQUNkLE1BQU0sRUFBRSxjQUFjO0VBQ3RCLE9BQU8sRUFBRSxDQUFDO0NBQ1g7OztBQUNELEFBRUUsTUFGSSxDQUVKLE9BQU8sQ0FBQztFQUNOLE1BQU0sRUFBRSxpQkFBaUI7RUFDekIsS0FBSyxFQUFFLEtBQUs7Q0FDYjs7O0FBTEgsQUFNRSxNQU5JLENBTUosTUFBTSxDQUFDO0VBQ0wsS0FBSyxFQUFFLElBQUk7RUFDWCxNQUFNLEVBQUUsSUFBSTtFQUNaLGFBQWEsRUFBRSxHQUFHO0VBQ2xCLE1BQU0sRUFBRSxpQkFBaUI7RUFDekIsT0FBTyxFQUFFLENBQUM7Q0FDWDs7O0FBWkgsQUFhRSxNQWJJLENBYUosRUFBRSxDQUFBO0VBQ0EsS0FBSyxFQUFFLE9BQU87RUFDZCxXQUFXLEVBQUUsSUFBSTtFQUNqQixTQUFTLEVBQUUsSUFBSTtFQUNmLEtBQUssRUFBRSxLQUFLO0NBQ2IiCn0= */

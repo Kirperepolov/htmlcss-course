@@ -1,0 +1,32 @@
+%flex-box{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+}
+.vertical-line {
+  width: 0;
+  height: 480px;
+  margin: 0 auto;
+  border: 1px solid #000;
+  z-index: 1;
+}
+.horiz{
+  @extend %flex-box;
+  article {
+    border: 2px solid #2342dd;
+    width: 250px;
+  }
+  .cicle {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    border: 1px solid #c0c0c0;
+    z-index: 2;
+  }
+  h3{
+    color: #2342dd;
+    font-weight: bold;
+    font-size: 14px;
+    width: 250px;
+  }
+}
