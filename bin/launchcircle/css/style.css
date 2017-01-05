@@ -1,40 +1,137 @@
-/* line 1, G:/Develop/htmlcss-course/bin/launchcircle/scss/style.scss */
-.horiz {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: nowrap;
+/* line 7, G:/Develop/htmlcss-course/bin/launchcircle/scss/style.scss */
+header {
+  line-height: 40px;
+  margin: 20px 0;
 }
 
-/* line 6, G:/Develop/htmlcss-course/bin/launchcircle/scss/style.scss */
-.vertical-line {
-  width: 0;
-  height: 480px;
-  margin: 0 auto;
-  border: 1px solid #000;
-  z-index: 1;
-}
-
-/* line 15, G:/Develop/htmlcss-course/bin/launchcircle/scss/style.scss */
-.horiz article {
-  border: 2px solid #2342dd;
-  width: 250px;
-}
-
-/* line 19, G:/Develop/htmlcss-course/bin/launchcircle/scss/style.scss */
-.horiz .cicle {
-  width: 75px;
-  height: 75px;
-  border-radius: 50%;
-  border: 1px solid #c0c0c0;
-  z-index: 2;
-}
-
-/* line 26, G:/Develop/htmlcss-course/bin/launchcircle/scss/style.scss */
-.horiz h3 {
-  color: #2342dd;
+/* line 10, G:/Develop/htmlcss-course/bin/launchcircle/scss/style.scss */
+header .brand {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  float: left;
+  background-color: #000;
   font-weight: bold;
-  font-size: 14px;
-  width: 250px;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
 }
 
-/*# sourceMappingURL=data:application/json;base64,ewoJInZlcnNpb24iOiAzLAoJImZpbGUiOiAic3R5bGUuY3NzIiwKCSJzb3VyY2VzIjogWwoJCSIuLi9zY3NzL3N0eWxlLnNjc3MiCgldLAoJIm5hbWVzIjogW10sCgkibWFwcGluZ3MiOiAiO0FBWUEsQUFaQSxNQVlNLENBWkc7RUFDUCxPQUFPLEVBQUUsSUFBSTtFQUNiLGVBQWUsRUFBRSxZQUFZO0VBQzdCLFNBQVMsRUFBRSxNQUFNO0NBQ2xCOzs7QUFDRCxBQUFBLGNBQWMsQ0FBQztFQUNiLEtBQUssRUFBRSxDQUFDO0VBQ1IsTUFBTSxFQUFFLEtBQUs7RUFDYixNQUFNLEVBQUUsTUFBTTtFQUNkLE1BQU0sRUFBRSxjQUFjO0VBQ3RCLE9BQU8sRUFBRSxDQUFDO0NBQ1g7OztBQUNELEFBRUUsTUFGSSxDQUVKLE9BQU8sQ0FBQztFQUNOLE1BQU0sRUFBRSxpQkFBaUI7RUFDekIsS0FBSyxFQUFFLEtBQUs7Q0FDYjs7O0FBTEgsQUFNRSxNQU5JLENBTUosTUFBTSxDQUFDO0VBQ0wsS0FBSyxFQUFFLElBQUk7RUFDWCxNQUFNLEVBQUUsSUFBSTtFQUNaLGFBQWEsRUFBRSxHQUFHO0VBQ2xCLE1BQU0sRUFBRSxpQkFBaUI7RUFDekIsT0FBTyxFQUFFLENBQUM7Q0FDWDs7O0FBWkgsQUFhRSxNQWJJLENBYUosRUFBRSxDQUFBO0VBQ0EsS0FBSyxFQUFFLE9BQU87RUFDZCxXQUFXLEVBQUUsSUFBSTtFQUNqQixTQUFTLEVBQUUsSUFBSTtFQUNmLEtBQUssRUFBRSxLQUFLO0NBQ2IiCn0= */
+/* line 22, G:/Develop/htmlcss-course/bin/launchcircle/scss/style.scss */
+header .language {
+  float: right;
+  text-align: center;
+  width: 100px;
+  color: #696969;
+}
+
+/* line 28, G:/Develop/htmlcss-course/bin/launchcircle/scss/style.scss */
+header #project-start {
+  float: right;
+  width: 140px;
+  text-align: center;
+  border: 2px solid #eaedf3;
+  border-radius: 5px;
+  color: #696969;
+  text-decoration: none;
+}
+
+/* line 36, G:/Develop/htmlcss-course/bin/launchcircle/scss/style.scss */
+header #project-start:hover {
+  border: 2px solid #696969;
+}
+
+/* line 40, G:/Develop/htmlcss-course/bin/launchcircle/scss/style.scss */
+header *:hover {
+  cursor: pointer;
+}
+
+/* line 47, G:/Develop/htmlcss-course/bin/launchcircle/scss/style.scss */
+h1 {
+  color: #696969;
+  font-family: Arial;
+  margin: 20px auto 100px;
+  font-weight: bold;
+}
+
+/* line 53, G:/Develop/htmlcss-course/bin/launchcircle/scss/style.scss */
+.container {
+  position: relative;
+}
+
+/* line 56, G:/Develop/htmlcss-course/bin/launchcircle/scss/style.scss */
+.vertical-line {
+  position: absolute;
+  width: 1px;
+  height: 70%;
+  left: 50%;
+  top: 240px;
+  background: #696969;
+  z-index: 0;
+}
+
+/* line 65, G:/Develop/htmlcss-course/bin/launchcircle/scss/style.scss */
+.horiz {
+  margin: 20px 0;
+}
+
+/* line 67, G:/Develop/htmlcss-course/bin/launchcircle/scss/style.scss */
+.horiz .info-block {
+  border: 10px solid #eaedf3;
+  color: #b0b4bc;
+}
+
+/* line 71, G:/Develop/htmlcss-course/bin/launchcircle/scss/style.scss */
+.horiz .info-block h4 {
+  color: #696969;
+  text-align: left;
+}
+
+/* line 75, G:/Develop/htmlcss-course/bin/launchcircle/scss/style.scss */
+.horiz .info-block.left::after {
+  width: 0;
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+  border-left: 40px solid #eaedf3;
+  position: absolute;
+  left: 100%;
+  top: 10px;
+  display: block;
+  content: "";
+}
+
+/* line 86, G:/Develop/htmlcss-course/bin/launchcircle/scss/style.scss */
+.horiz .info-block.right::after {
+  width: 0;
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+  border-right: 40px solid #eaedf3;
+  position: absolute;
+  left: -40px;
+  top: 10px;
+  display: block;
+  content: "";
+}
+
+/* line 98, G:/Develop/htmlcss-course/bin/launchcircle/scss/style.scss */
+.horiz .circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 3px solid #eaedf3;
+  background-color: #fff;
+  margin: 0 auto;
+  z-index: 2;
+  background-image: url(../images/Circle_stripe.png);
+}
+
+/* line 109, G:/Develop/htmlcss-course/bin/launchcircle/scss/style.scss */
+.horiz h3 {
+  color: #008cff;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 30% auto 0;
+}
+
+/*# sourceMappingURL=data:application/json;base64,ewoJInZlcnNpb24iOiAzLAoJImZpbGUiOiAic3R5bGUuY3NzIiwKCSJzb3VyY2VzIjogWwoJCSIuLi9zY3NzL3N0eWxlLnNjc3MiCgldLAoJIm5hbWVzIjogW10sCgkibWFwcGluZ3MiOiAiO0FBTUEsQUFBQSxNQUFNLENBQUE7RUFDSixXQUFXLEVBQUUsSUFBSTtFQUNqQixNQUFNLEVBQUUsTUFBTTtDQWtDZjs7O0FBcENELEFBR0UsTUFISSxDQUdKLE1BQU0sQ0FBQTtFQUNKLEtBQUssRUFBRSxJQUFJO0VBQ1gsTUFBTSxFQUFFLElBQUk7RUFDWixhQUFhLEVBQUUsR0FBRztFQUNsQixLQUFLLEVBQUUsSUFBSTtFQUNYLGdCQUFnQixFQUFFLElBQUk7RUFDdEIsV0FBVyxFQUFFLElBQUk7RUFDakIsU0FBUyxFQUFFLElBQUk7RUFDZixLQUFLLEVBQUUsSUFBSTtFQUNYLFVBQVUsRUFBRSxNQUFNO0VBQ2xCLGVBQWUsRUFBRSxJQUFJO0NBQ3RCOzs7QUFkSCxBQWVFLE1BZkksQ0FlSixTQUFTLENBQUE7RUFDUCxLQUFLLEVBQUUsS0FBSztFQUNaLFVBQVUsRUFBRSxNQUFNO0VBQ2xCLEtBQUssRUFBRSxLQUFLO0VBQ1osS0FBSyxFQXpCSSxPQUFPO0NBMEJqQjs7O0FBcEJILEFBcUJFLE1BckJJLENBcUJKLGNBQWMsQ0FBQTtFQUNaLEtBQUssRUFBRSxLQUFLO0VBQ1osS0FBSyxFQUFFLEtBQUs7RUFDWixVQUFVLEVBQUUsTUFBTTtFQUNsQixNQUFNLEVBQUUsR0FBRyxDQUFDLEtBQUssQ0E3Qk4sT0FBTztFQThCbEIsYUFBYSxFQUFFLEdBQUc7RUFDbEIsS0FBSyxFQWpDSSxPQUFPO0VBa0NoQixlQUFlLEVBQUUsSUFBSTtDQUl0Qjs7O0FBaENILEFBcUJFLE1BckJJLENBcUJKLGNBQWMsQUFRWixNQUFPLENBQUE7RUFDTCxNQUFNLEVBQUUsR0FBRyxDQUFDLEtBQUssQ0FwQ1YsT0FBTztDQXFDZjs7O0FBL0JMLEFBaUNFLE1BakNJLENBaUNKLENBQUMsQUFBQSxNQUFNLENBQUE7RUFDTCxNQUFNLEVBQUUsT0FBTztDQUNoQjs7O0FBS0gsQUFBQSxFQUFFLENBQUE7RUFDQSxLQUFLLEVBL0NNLE9BQU87RUFnRGxCLFdBQVcsRUFBRSxLQUFLO0VBQ2xCLE1BQU0sRUFBRSxlQUFlO0VBQ3ZCLFdBQVcsRUFBRSxJQUFJO0NBQ2xCOzs7QUFDRCxBQUFBLFVBQVUsQ0FBQTtFQUNSLFFBQVEsRUFBRSxRQUFRO0NBQ25COzs7QUFDRCxBQUFBLGNBQWMsQ0FBQztFQUNiLFFBQVEsRUFBRSxRQUFRO0VBQ2xCLEtBQUssRUFBRSxHQUFHO0VBQ1YsTUFBTSxFQUFFLEdBQUc7RUFDWCxJQUFJLEVBQUMsR0FBRztFQUNSLEdBQUcsRUFBRSxLQUFLO0VBQ1YsVUFBVSxFQTdEQyxPQUFPO0VBOERsQixPQUFPLEVBQUUsQ0FBQztDQUNYOzs7QUFDRCxBQUFBLE1BQU0sQ0FBQTtFQUNKLE1BQU0sRUFBRSxNQUFNO0NBaURmOzs7QUFsREQsQUFFRSxNQUZJLENBRUosV0FBVyxDQUFDO0VBQ1YsTUFBTSxFQUFFLElBQUksQ0FBQyxLQUFLLENBakVQLE9BQU87RUFrRWxCLEtBQUssRUFuRUssT0FBTztDQStGbEI7OztBQWhDSCxBQU1JLE1BTkUsQ0FFSixXQUFXLENBSVQsRUFBRSxDQUFBO0VBQ0EsS0FBSyxFQXZFRSxPQUFPO0VBd0VkLFVBQVUsRUFBRSxJQUFJO0NBQ2pCOzs7QUFUTCxBQUVFLE1BRkksQ0FFSixXQUFXLEFBUVQsS0FBTSxBQUFBLE9BQU8sQ0FBQTtFQUNYLEtBQUssRUFBRSxDQUFDO0VBQ1IsVUFBVSxFQUFFLHNCQUFzQjtFQUNsQyxhQUFhLEVBQUUsc0JBQXNCO0VBQ3JDLFdBQVcsRUFBRSxJQUFJLENBQUMsS0FBSyxDQTVFZCxPQUFPO0VBNkVoQixRQUFRLEVBQUUsUUFBUTtFQUNsQixJQUFJLEVBQUUsSUFBSTtFQUNWLEdBQUcsRUFBRSxJQUFJO0VBQ1QsT0FBTyxFQUFFLEtBQUs7RUFDZCxPQUFPLEVBQUUsRUFBRTtDQUNaOzs7QUFwQkwsQUFFRSxNQUZJLENBRUosV0FBVyxBQW1CVCxNQUFPLEFBQUEsT0FBTyxDQUFBO0VBQ1osS0FBSyxFQUFFLENBQUM7RUFDUixVQUFVLEVBQUUsc0JBQXNCO0VBQ2xDLGFBQWEsRUFBRSxzQkFBc0I7RUFDckMsWUFBWSxFQUFFLElBQUksQ0FBQyxLQUFLLENBdkZmLE9BQU87RUF3RmhCLFFBQVEsRUFBRSxRQUFRO0VBQ2xCLElBQUksRUFBRSxLQUFLO0VBQ1gsR0FBRyxFQUFFLElBQUk7RUFDVCxPQUFPLEVBQUUsS0FBSztFQUNkLE9BQU8sRUFBRSxFQUFFO0NBQ1o7OztBQS9CTCxBQWlDRSxNQWpDSSxDQWlDSixPQUFPLENBQUM7RUFDTixLQUFLLEVBQUUsSUFBSTtFQUNYLE1BQU0sRUFBRSxJQUFJO0VBQ1osYUFBYSxFQUFFLEdBQUc7RUFDbEIsTUFBTSxFQUFFLEdBQUcsQ0FBQyxLQUFLLENBbkdOLE9BQU87RUFvR2xCLGdCQUFnQixFQUFFLElBQUk7RUFDdEIsTUFBTSxFQUFFLE1BQU07RUFDZCxPQUFPLEVBQUUsQ0FBQztFQUNWLGdCQUFnQixFQUFFLGdDQUFnQztDQUVuRDs7O0FBM0NILEFBNENFLE1BNUNJLENBNENKLEVBQUUsQ0FBQTtFQUNBLEtBQUssRUExR00sT0FBTztFQTJHbEIsV0FBVyxFQUFFLElBQUk7RUFDakIsU0FBUyxFQUFFLElBQUk7RUFDZixNQUFNLEVBQUUsVUFBVTtDQUNuQiIKfQ== */

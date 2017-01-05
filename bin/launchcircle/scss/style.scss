@@ -1,32 +1,122 @@
-%flex-box{
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: nowrap;
+$main-color: #696969;
+$light-color: #b0b4bc;
+$border-color: #eaedf3;
+$quotes-color: #008cff;
+
+// HEADER START
+header{
+  line-height: 40px;
+  margin: 20px 0;
+  .brand{
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    float: left;
+    background-color: #000;
+    font-weight: bold;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+  }
+  .language{
+    float: right;
+    text-align: center;
+    width: 100px;
+    color: $main-color;
+  }
+  #project-start{
+    float: right;
+    width: 140px;
+    text-align: center;
+    border: 2px solid $border-color;
+    border-radius: 5px;
+    color: $main-color;
+    text-decoration: none;
+    &:hover{
+      border: 2px solid $main-color;
+    }
+  }
+  *:hover{
+    cursor: pointer;
+  }
+}
+// HEADER END
+
+// MAIN START
+h1{
+  color: $main-color;
+  font-family: Arial;
+  margin: 20px auto 100px;
+  font-weight: bold;
+}
+.container{
+  position: relative;
 }
 .vertical-line {
-  width: 0;
-  height: 480px;
-  margin: 0 auto;
-  border: 1px solid #000;
-  z-index: 1;
+  position: absolute;
+  width: 1px;
+  height: 70%;
+  left:50%;
+  top: 240px;
+  background: $main-color;
+  z-index: 0;
 }
 .horiz{
-  @extend %flex-box;
-  article {
-    border: 2px solid #2342dd;
-    width: 250px;
+  margin: 20px 0;
+  .info-block {
+    border: 10px solid $border-color;
+    color: $light-color;
+    // height: 460px;
+    h4{
+      color: $main-color;
+      text-align: left;
+    }
+    &.left::after{
+      width: 0;
+      border-top: 30px solid transparent;
+      border-bottom: 30px solid transparent;
+      border-left: 40px solid $border-color;
+      position: absolute;
+      left: 100%;
+      top: 10px;
+      display: block;
+      content: "";
+    }
+    &.right::after{
+      width: 0;
+      border-top: 30px solid transparent;
+      border-bottom: 30px solid transparent;
+      border-right: 40px solid $border-color;
+      position: absolute;
+      left: -40px;
+      top: 10px;
+      display: block;
+      content: "";
+    }
   }
-  .cicle {
-    width: 75px;
-    height: 75px;
+  .circle {
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
-    border: 1px solid #c0c0c0;
+    border: 3px solid $border-color;
+    background-color: #fff;
+    margin: 0 auto;
     z-index: 2;
+    background-image: url(../images/Circle_stripe.png);
+    // background-size:80px;
   }
   h3{
-    color: #2342dd;
+    color: $quotes-color;
     font-weight: bold;
-    font-size: 14px;
-    width: 250px;
+    font-size: 20px;
+    margin: 30% auto 0;
   }
 }
+//MAIN END
+
+// FOOTER START
+footer{
+
+}
+// FOOTER END

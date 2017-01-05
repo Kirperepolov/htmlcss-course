@@ -7,25 +7,94 @@
   <title>Document</title>
 
   <!-- styles -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header>
-    <div class="brand">L</div>
-    <div class="language">Deutsch</div>
+  <header class="container">
+    <a href="#" class="brand">L</a>
     <div id="project-start">Start a project</div>
+    <a href="#" class="language">Deutsch</a>
   </header>
-  <main>
-    <h1>Our launch process</h1>
-    <div class="proposal horiz">
-      <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</article>
-      <div class="cicle"></div>
-      <h3>Fast and fair</h3>
+  <main class="container">
+    <h1 class="text-center">Our launch process</h1>
+    <div class="vertical-line hidden-xs"></div>
+    <!-- the first block - PROPOSAL -->
+    <div class="horiz col-sm-12">
+      <div class="info-block left col-sm-offset-1 col-sm-3">
+        <h4>Get a proposal</h4>
+        <article>
+          Our guaranteed, fair price is possible because we understand how projects are built and what that entails. Of course, our speed is just a perk of using our service - we aren’t charging you extra for it.
+        </article>
+      </div>
+      <div class="col-sm-offset-1 col-sm-2">
+        <div class="circle"></div>
+      </div>
+      <div class="col-sm-offset-1 col-sm-3">
+        <h3>Fast and fair</h3>
+      </div>
     </div>
-
-    <div class="vertical-line"></div>
+    <!-- the second block - PROPOSAL -->
+    <div class="horiz col-sm-12">
+      <div class="col-sm-offset-1 col-sm-3">
+        <h3>Learning the lingo</h3>
+      </div>
+      <div class="col-sm-offset-1 col-sm-2">
+        <div class="circle"></div>
+      </div>
+      <div class="info-block right col-sm-offset-1 col-sm-3">
+        <h4>Review project deliverables</h4>
+        <article>
+          This is where your creative concept is translated into technical instructions that our engineers will use to create the product. This is a process that takes a special know-how to achieve fluidly, and we have nailed this down purely by doing it over and over again. Practice makes perfect, and we have the experience.
+        </article>
+      </div>
+    </div>
+    <!-- the third block - PROPOSAL -->
+    <div class="horiz col-sm-12">
+      <div class="info-block left col-sm-offset-1 col-sm-3">
+        <h4>Always remain in control</h4>
+        <article>
+          With the help of your dedicated project manager, you are kept in the loop via regular status reports and refered to for decision-making. We rely on our experience to set achievable, tightly managed milestones to provide you with the current project status and a reliable timeline projection to completion.
+        </article>
+      </div>
+      <div class="col-sm-offset-1 col-sm-2">
+        <div class="circle"></div>
+      </div>
+      <div class="col-sm-offset-1 col-sm-3"></div>
+    </div>
+    <!-- the fourth block - RUN IT -->
+    <div class="horiz col-sm-12">
+      <div class="col-sm-offset-1 col-sm-3">
+        <h3>Take it and run with it</h3>
+      </div>
+      <div class="col-sm-offset-1 col-sm-2">
+        <div class="circle"></div>
+      </div>
+      <div class="info-block right col-sm-offset-1 col-sm-3">
+        <h4>Ownership handover</h4>
+        <article>
+          Our team facilitates a smooth, comprehensive handover powered by communication and experience. Because you have been a part of the team since the beginning, you are aware of the product and what it entails. Experience has allowed us to predict and address possible questions and confusions on your side, creating an efficient handover process.
+        </article>
+      </div>
+    </div>
+    <!-- the fifth block - Keep going -->
+    <div class="horiz col-sm-12">
+      <div class="info-block left col-sm-offset-1 col-sm-3">
+        <h4>Keep going!</h4>
+        <article>
+          We know the ins and outs of your product, which means we can easily supplement it in the future such as with new features or scaling. We love nothing more than exploring new possibilites with old clients, so we welcome you to build upon our partnership with new projects in the future.
+        </article>
+      </div>
+      <div class="col-sm-offset-1 col-sm-2">
+        <div class="circle"></div>
+      </div>
+      <div class="col-sm-offset-1 col-sm-3">
+        <h3>Houston, we have a project</h3>
+      </div>
+    </div>
   </main>
-  <footer></footer>
+  <footer class="container"></footer>
 
   <!-- SCRIPTS HERE -->
   <script src="scripts/angular.min.js" charset="utf-8"></script>
