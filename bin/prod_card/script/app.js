@@ -69,7 +69,7 @@
                               //rate the product
       }).catch(error=>console.log(error.message));
     };
-    ctrl.find();
+    ctrl.$onInit = ctrl.find;
 
 
     /**
