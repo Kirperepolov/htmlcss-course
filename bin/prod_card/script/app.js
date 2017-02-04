@@ -43,10 +43,9 @@
                 // products to it in format {productId:id,quantity:quantity}
 
     /**
-     * ctrl - in this app the find function searches products by colors, but
-     *        it can be easily changed
+     * ctrl.find - the function searches products by colors
      *
-     * @param  {string} color a desired color of a product
+     * @param  {string} color a desired color of a product.not a neccessary arg.
      * @return        the function returns nothing, however, it changes
      *            a set of controller parameters
      */
@@ -99,11 +98,11 @@
     };
     ctrl.prevSlide = function(){
       var thisSlide = ctrl.activeSlide;
-      ctrl.activeSlide = (thisSlide-1)%ctrl.product.images;
+      ctrl.activeSlide = (thisSlide-1+ctrl.product.images)%ctrl.product.images;
     };
     ctrl.nextSlide = function(){
       var thisSlide = ctrl.activeSlide;
-      ctrl.activeSlide = (thisSlide+1)%ctrl.product.images;
+      ctrl.activeSlide = (thisSlide+1+ctrl.product.images)%ctrl.product.images;
     };
 
     /**
